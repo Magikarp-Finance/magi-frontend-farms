@@ -30,7 +30,7 @@ const config: MenuEntry[] = [
   {
     label: 'Nests',
     icon: 'PoolIcon',
-    href: '/nests',
+    href: '/pools',
     
   },
   // {
