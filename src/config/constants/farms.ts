@@ -150,16 +150,16 @@ const farms: FarmConfig[] = [
   },
   {
     pid: 11,
-    risk: 5,
-    lpSymbol: 'GYA',
+    risk: 2,
+    lpSymbol: 'BTCB-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0xd1b59d11316e87c3a0a069e80f590ba35cd8d8d3',
+      56: '0x7561eee90e24f3b348e1087a005f78b4c8453524',
     },
-    tokenSymbol: 'GYA',
+    tokenSymbol: 'BTCB',
     tokenAddresses: {
       97: '',
-      56: '0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c',
+      56: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
