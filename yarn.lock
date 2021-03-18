@@ -1837,7 +1837,7 @@
 
 "@pancakeswap-libs/uikit@https://github.com/Magikarp-Finance/magi-uikit":
   version "0.10.2"
-  resolved "https://github.com/Magikarp-Finance/magi-uikit#911b7da0c15a3fe22ccc220609416dfcba4c8d3f"
+  resolved "https://github.com/Magikarp-Finance/magi-uikit#d52517b47acc378cf59238aaed94738c954959f2"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
