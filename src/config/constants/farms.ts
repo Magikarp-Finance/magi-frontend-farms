@@ -24,7 +24,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'GYRA-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0xd1b59d11316e87c3a0a069e80f590ba35cd8d8d3',
+      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
     },
     tokenSymbol: 'GYRA',
     tokenAddresses: {
