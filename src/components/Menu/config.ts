@@ -57,9 +57,14 @@ const config: MenuEntry[] = [
     icon: 'InfoIcon',
     items: [
       {
-        label: 'PancakeSwap',
-        href: '#',
+        label: 'MAGI',
+        href: 'https://bscscan.com/token/0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c',
       },
+  //  {
+  //    label: 'Gyrados',
+  //    href: 'https://bscscan.com/token/0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c',
+  //  },
+
   // {
   //    label: 'CoinGecko',
   //    href: 'https://www.coingecko.com/en/coins/goose-finance',
@@ -78,18 +83,18 @@ const config: MenuEntry[] = [
     label: 'More',
     icon: 'MoreIcon',
     items: [
-     {
-        label: 'Github',
-        href: 'https://github.com/goosedefi/',
-        
-      },
-      {
-        label: 'Docs',
-        href: 'https://goosedefi.gitbook.io/goose-finance/',
-      },
+  // {
+  //    label: 'Github',
+  //    href: 'https://github.com/goosedefi/',
+  //    
+  //  },
+  //  {
+  //    label: 'Docs',
+  //    href: 'https://goosedefi.gitbook.io/goose-finance/',
+  //  },
       {
         label: 'Blog',
-        href: 'https://goosefinance.medium.com/',
+        href: 'https://magikarpfinance.medium.com/',
       },
     ],
   }, 
@@ -101,13 +106,13 @@ const config: MenuEntry[] = [
   {
     label: 'Audit by Techrate (MAGI)',
     icon: 'AuditIcon',
-    href: 'https://www.goosedefi.com/files/hackenAudit.pdf',
+    href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/Magikarp%20Finance.pdf',
   },
-  {
-    label: 'Audit by CertiK (GYARADOS)',
-    icon: 'AuditIcon',
-    href: 'https://certik.org/projects/goose-finance',
-  },
+//  {
+//    label: 'Audit by Techrate (GYARADOS)',
+//    icon: 'AuditIcon',
+//    href: 'https://certik.org/projects/goose-finance',
+//  },
 ]
 
 export default config

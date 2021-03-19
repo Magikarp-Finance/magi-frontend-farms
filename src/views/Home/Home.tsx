@@ -62,7 +62,7 @@ const Home: React.FC = () => {
         <Heading as="h1" size="xl" mb="24px" color="secondary">
           {TranslateString(576, 'Magikarp Finance')}
         </Heading>
-        <Text>{TranslateString(578, 'The Pokedesk App on Binance Smart Chain')}</Text>
+        <Text>{TranslateString(578, 'One app to gather them all')}</Text>
       </Hero>
       <div>
         <Cards>
