@@ -16,7 +16,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Exchange Gyarados',
-        href: '#',
+        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9458784486fb00c2d1a8740d5579207c42dbd602  ',
       },
       {
         label: 'Liquidity',
@@ -60,10 +60,10 @@ const config: MenuEntry[] = [
         label: 'MAGI',
         href: 'https://bscscan.com/token/0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c',
       },
-  //  {
-  //    label: 'Gyrados',
-  //    href: 'https://bscscan.com/token/0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c',
-  //  },
+    {
+      label: 'Gyrados',
+      href: 'https://bscscan.com/token/0x9458784486fb00c2d1a8740d5579207c42dbd602',
+    },
 
   // {
   //    label: 'CoinGecko',
