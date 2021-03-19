@@ -51,7 +51,7 @@ const farms: FarmConfig[] = [
   //   quoteTokenAdresses: contracts.busd,
   // },
   {
-    pid: 2,
+    pid: 3,
     risk: 1,
     lpSymbol: 'MAGI-BNB LP',
     lpAddresses: {
@@ -67,7 +67,7 @@ const farms: FarmConfig[] = [
     quoteTokenAdresses: contracts.wbnb,
   },
   {
-    pid: 3,
+    pid: 2,
     risk: 2,
     lpSymbol: 'MAGI-BUSD LP',
     lpAddresses: {
