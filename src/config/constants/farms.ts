@@ -10,7 +10,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfba76D17Ed68C3c67540e9B6238bdD8Ff6877b89',
     },
-    tokenSymbol: 'gya',
+    tokenSymbol: 'GYA',
     tokenAddresses: {
       97: '',
       56: '0x9458784486fb00c2d1a8740d5579207c42dbd602',
@@ -26,7 +26,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x315ba9DE24997f39f0Ba818F7266f6d01bBCcd9c',
     },
-    tokenSymbol: 'gya',
+    tokenSymbol: 'GYA',
     tokenAddresses: {
       97: '',
       56: '0x9458784486fb00c2d1a8740d5579207c42dbd602',
@@ -42,7 +42,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0x7248953e6CF8927b8a3942ccbEb61e00559Dd3A5',
     },
-    tokenSymbol: 'magi',
+    tokenSymbol: 'MAGI',
     tokenAddresses: {
       97: '',
       56: '0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c',
@@ -171,7 +171,7 @@ const farms: FarmConfig[] = [
       97: '',
       56: '0xfba76D17Ed68C3c67540e9B6238bdD8Ff6877b89',
     },
-    tokenSymbol: 'gya',
+    tokenSymbol: 'GYA',
     tokenAddresses: {
       97: '',
       56: '0x9458784486fb00c2d1a8740d5579207c42dbd602',
