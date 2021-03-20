@@ -34,22 +34,22 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
-  // {
-  //   pid: 2,
-  //   risk: 3,
-  //   lpSymbol: 'GYA-MAGI LP',
-  //   lpAddresses: {
-  //     97: '',
-  //     56: '',
-  //   },
-  //   tokenSymbol: 'GYA',
-  //   tokenAddresses: {
-  //     97: '',
-  //     56: '0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c',
-  //   },
-  //   quoteTokenSymbol: QuoteToken.BUSD,
-  //   quoteTokenAdresses: contracts.busd,
-  // },
+  {
+    pid: 10,
+    risk: 3,
+    lpSymbol: 'GYA-MAGI LP',
+    lpAddresses: {
+      97: '',
+      56: '0x7248953e6CF8927b8a3942ccbEb61e00559Dd3A5',
+    },
+    tokenSymbol: 'magi',
+    tokenAddresses: {
+      97: '',
+      56: '0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c',
+    },
+    quoteTokenSymbol: QuoteToken.CAKE,
+    quoteTokenAdresses: contracts.cake,
+  },
   {
     pid: 3,
     risk: 1,
