@@ -1837,7 +1837,17 @@
 
 "@pancakeswap-libs/uikit@https://github.com/Magikarp-Finance/magi-uikit":
   version "0.10.2"
-  resolved "https://github.com/Magikarp-Finance/magi-uikit#d52517b47acc378cf59238aaed94738c954959f2"
+  resolved "https://github.com/Magikarp-Finance/magi-uikit#d314f901f37e643ef9a645731dc037f15983e434"
+  dependencies:
+    "@types/lodash" "^4.14.162"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
+
+"@pancakeswap-libs/uikit@https://github.com/Magikarp-Finance/magi-uikit#newtokens":
+  version "0.10.21"
+  resolved "https://github.com/Magikarp-Finance/magi-uikit#a0bf167181feeae9eeca5d6ad93cd16e3e2620fc"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"

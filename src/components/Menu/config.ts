@@ -37,32 +37,6 @@ const config: MenuEntry[] = [
     href: '/pools',
     
   },
-  {
-    label: 'Magi',
-    icon: 'MagiMenuIcon',
-    items: [
-      {
-        label: 'Info',
-        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c',
-      },
-      {
-        label: 'Audit by TechRate'
-        icon: 'AuditIcon',
-        href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/Magikarp%20Finance.pdf',
-
-      }
-
-      {
-        label: 'Exchange Gyarados',
-        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9458784486fb00c2d1a8740d5579207c42dbd602  ',
-      },
-      {
-        label: 'Liquidity',
-        href: 'https://exchange.pancakeswap.finance/#/pool',
-        
-      },
-
-  }
   // {
   //   label: 'Pools',
   //   icon: 'PoolIcon',
@@ -107,7 +81,7 @@ const config: MenuEntry[] = [
   },
   {
     label: 'More',
-    icon: 'MoreIcon', 
+    icon: 'MoreIcon',
     items: [
   // {
   //    label: 'Github',
