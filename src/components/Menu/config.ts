@@ -12,7 +12,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange Magikarp',
-        href: 'https://exchange.pancakeswap.finance/#/swap?inputCurrency=0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c',
+        href: 'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c',
       },
       {
         label: 'Exchange Gyarados',

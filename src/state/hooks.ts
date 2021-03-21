@@ -83,6 +83,15 @@ export const usePriceCakeBusd = (): BigNumber => {
   const farm = useFarmFromPid(pid);
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO;
 }
+export const usePriceMagiBusd = (): BigNumber => {
+  // const pid = 1 // CAKE-BNB LP
+  // const bnbPriceUSD = usePriceBnbBusd()
+  // const farm = useFarmFromPid(pid)
+  // return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
+  const pid = 2; // EGG-BUSD LP
+  const farm = useFarmFromPid(pid);
+  return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO;
+}
 
 export const useTotalValue = (): BigNumber => {
   const farms = useFarms();
