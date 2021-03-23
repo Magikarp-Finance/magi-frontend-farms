@@ -4,51 +4,40 @@ export const RABBIT_MINTING_FARM_ADDRESS = '0x7c8b60d2b859a38c8B9b5B6CB4565485cb
 export const PANCAKE_RABBITS_ADDRESS = '0xDf7952B35f24aCF7fC0487D01c8d5690a60DBa07'
 
 const Nfts: Nft[] = [
-  {
-    name: 'Swapsies',
-    description: 'These bunnies love nothing more than swapping pancakes. Especially on BSC.',
-    originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/swapsies.png',
-    previewImage: 'swapsies-preview.png',
-    blurImage: 'swapsies-blur.png',
-    sortOrder: 999,
-    bunnyId: 0,
-  },
-  {
-    name: 'Drizzle',
-    description: "It's raining syrup on this bunny, but he doesn't seem to mind. Can you blame him?",
-    originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/drizzle.png',
-    previewImage: 'drizzle-preview.png',
-    blurImage: 'drizzle-blur.png',
-    sortOrder: 999,
-    bunnyId: 1,
-  },
-  {
-    name: 'Blueberries',
-    description: "These bunnies like their pancakes with blueberries. What's your favorite topping?",
-    originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/blueberries.png',
-    previewImage: 'blueberries-preview.png',
-    blurImage: 'blueberries-blur.png',
-    sortOrder: 999,
-    bunnyId: 2,
-  },
-  {
-    name: 'Circular',
-    description: "Love makes the world go 'round... but so do pancakes. And these bunnies know it.",
-    originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/circular.png',
-    previewImage: 'circular-preview.png',
-    blurImage: 'circular-blur.png',
-    sortOrder: 999,
-    bunnyId: 3,
-  },
-  {
-    name: 'Sparkle',
-    description: 'It’s sparkling syrup, pancakes, and even lottery tickets! This bunny really loves it.',
-    originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/sparkle.png',
-    previewImage: 'sparkle-preview.png',
-    blurImage: 'sparkle-blur.png',
-    sortOrder: 999,
-    bunnyId: 4,
-  },
+	{
+		name: 'Lucky Star',
+		description: "If we ain't out of here in ten minutes, we won't need no rocket to fly through space!",
+		originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/swapsies.png',
+		previewImage: 'MagiAlien.png',
+		blurImage: 'swapsies-blur.png',
+		sortOrder: 999,
+		bunnyId: 0,
+		collection: 'Deep Space',
+		pathCollection: 'SpaceMagi'
+	},
+	{
+		name: 'Flying to the Moon',
+		description: 'Gravity proves that the whole universe is filled with Love.',
+		originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/drizzle.png',
+		previewImage: 'MagiGravity.png',
+		blurImage: 'drizzle-blur.png',
+		sortOrder: 999,
+		bunnyId: 1,
+		collection: 'Deep Space',
+		pathCollection: 'SpaceMagi'
+	},
+	{
+		name: 'Red Planet',
+		description: "Hi, I'm Magikarp and I'm still alive... obviously",
+		originalImage:
+			'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/blueberries.png',
+		previewImage: 'MagiMartian.png',
+		blurImage: 'blueberries-blur.png',
+		sortOrder: 999,
+		bunnyId: 2,
+		collection: 'Deep Space',
+		pathCollection: 'SpaceMagi'
+	}
 ]
 
 export default Nfts
