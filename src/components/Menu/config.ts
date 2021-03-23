@@ -91,33 +91,33 @@ const config: MenuEntry[] = [
 	//   icon: 'NftIcon',
 	//   href: '/nft',
 	// },
-	{
-		label: 'Info',
-		icon: 'InfoIcon',
-		items: [
-			{
-				label: 'MAGI',
-				href: 'https://bscscan.com/token/0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c'
-			},
-			{
-				label: 'Gyrados',
-				href: 'https://bscscan.com/token/0x9458784486fb00c2d1a8740d5579207c42dbd602'
-			}
+	// {
+	//    label: 'Info',
+	//    icon: 'InfoIcon',
+	//    items: [
+	//	    {
+	//		    label: 'MAGI',
+	//		    href: 'https://bscscan.com/token/0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c'
+	//	    },
+	//	    {
+	//	    	label: 'Gyrados',
+	//	      href: 'https://bscscan.com/token/0x9458784486fb00c2d1a8740d5579207c42dbd602'
+	//	    }
 
-			// {
-			//    label: 'CoinGecko',
-			//    href: 'https://www.coingecko.com/en/coins/goose-finance',
-			//  },
-			//  {
-			//    label: 'CoinMarketCap',
-			//    href: 'https://coinmarketcap.com/currencies/goose-finance/',
-			//  },
-			//  {
-			//    label: 'AstroTools',
-			//    href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
-			//  },
-		]
-	},
+	// {
+	//    label: 'CoinGecko',
+	//    href: 'https://www.coingecko.com/en/coins/goose-finance',
+	//  },
+	//  {
+	//    label: 'CoinMarketCap',
+	//    href: 'https://coinmarketcap.com/currencies/goose-finance/',
+	//  },
+	//  {
+	//    label: 'AstroTools',
+	//    href: 'https://app.astrotools.io/pancake-pair-explorer/0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+	//  },
+	//  ]
+	// },
 	{
 		label: 'More',
 		icon: 'MoreIcon',
