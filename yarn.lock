@@ -1836,8 +1836,8 @@
     eslint-plugin-react-hooks "^4.0.0"
 
 "@pancakeswap-libs/uikit@https://github.com/Magikarp-Finance/magi-uikit":
-  version "0.10.24"
-  resolved "https://github.com/Magikarp-Finance/magi-uikit#2bd8518c509478bbf3a564a50664331737679322"
+  version "0.10.25"
+  resolved "https://github.com/Magikarp-Finance/magi-uikit#1f248ff2d98b4a407bc85e6625727cccdf16dde7"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
