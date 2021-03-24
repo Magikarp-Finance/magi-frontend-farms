@@ -21,63 +21,66 @@ const NotFound = lazy(() => import('./views/NotFound'))
 
 // This config is required for number formating
 BigNumber.config({
-  EXPONENTIAL_AT: 1000,
-  DECIMAL_PLACES: 80,
+	EXPONENTIAL_AT: 1000,
+	DECIMAL_PLACES: 80
 })
 
 const App: React.FC = () => {
-  const { account, connect } = useWallet()
-  useEffect(() => {
-    if (!account && window.localStorage.getItem('accountStatus')) {
-      connect('injected')
-    }
-  }, [account, connect])
+	const { account, connect } = useWallet()
+	useEffect(
+		() => {
+			if (!account && window.localStorage.getItem('accountStatus')) {
+				connect('injected')
+			}
+		},
+		[ account, connect ]
+	)
 
-  useFetchPublicData()
+	useFetchPublicData()
 
-  return (
-    <Router>
-      <ResetCSS />
-      <GlobalStyle />
-      <Menu>
-        <Suspense fallback={<PageLoader />}>
-          <Switch>
-            <Route path="/" exact>
-              <Home />
-            </Route>
-            <Route path="/farms">
-              <Farms />
-            </Route>
-            <Route path="/pools">
-              <Farms tokenMode/>
-            </Route>
-            {/* <Route path="/pools"> */}
-            {/*  <Pools /> */}
-            {/* </Route> */}
-            {/* <Route path="/lottery"> */}
-            {/*  <Lottery /> */}
-            {/* </Route> */}
-            {/* <Route path="/ifo"> */}
-            {/*  <Ifos /> */}
-            {/* </Route> */}
-            {/* <Route path="/nft"> */}
-            {/*  <Nft /> */}
-            {/* </Route> */}
-            {/* Redirect */}
-            {/* <Route path="/staking"> */}
-            {/*  <Redirect to="/pools" /> */}
-            {/* </Route> */}
-            {/* <Route path="/syrup"> */}
-            {/*  <Redirect to="/pools" /> */}
-            {/* </Route> */}
-            {/* 404 */}
-            <Route component={NotFound} />
-          </Switch>
-        </Suspense>
-      </Menu>
-      <NftGlobalNotification />
-    </Router>
-  )
+	return (
+		<Router>
+			<ResetCSS />
+			<GlobalStyle />
+			<Menu>
+				<Suspense fallback={<PageLoader />}>
+					<Switch>
+						<Route path='/' exact>
+							<Home />
+						</Route>
+						<Route path='/farms'>
+							<Farms />
+						</Route>
+						<Route path='/pools'>
+							<Farms tokenMode />
+						</Route>
+						{/* <Route path="/pools"> */}
+						{/*  <Pools /> */}
+						{/* </Route> */}
+						{/* <Route path='/lottery'> */}
+						{/*	<Lottery /> */}
+						{/* </Route> */}
+						{/* <Route path="/ifo"> */}
+						{/*  <Ifos /> */}
+						{/* </Route> */}
+						{/* <Route path="/nft"> */}
+						{/*  <Nft /> */}
+						{/* </Route> */}
+						{/* Redirect */}
+						{/* <Route path="/staking"> */}
+						{/*  <Redirect to="/pools" /> */}
+						{/* </Route> */}
+						{/* <Route path="/syrup"> */}
+						{/*  <Redirect to="/pools" /> */}
+						{/* </Route> */}
+						{/* 404 */}
+						<Route component={NotFound} />
+					</Switch>
+				</Suspense>
+			</Menu>
+			<NftGlobalNotification />
+		</Router>
+	)
 }
 
 export default React.memo(App)
