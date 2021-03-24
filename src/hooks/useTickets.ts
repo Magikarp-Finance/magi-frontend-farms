@@ -4,112 +4,130 @@ import BigNumber from 'bignumber.js'
 import { useLottery, useLotteryTicket } from 'hooks/useContract'
 import useRefresh from './useRefresh'
 import {
-  getTotalRewards,
-  getTotalClaim,
-  getMatchingRewardLength,
-  getWinningNumbers,
-  getTickets,
+	getTotalRewards,
+	getTotalClaim,
+	getMatchingRewardLength,
+	getWinningNumbers,
+	getTickets
 } from '../utils/lotteryUtils'
 
 const useTickets = (lotteryNumber = null) => {
-  const [tickets, setTickets] = useState([])
-  const { account } = useWallet()
-  const ticketsContract = useLotteryTicket()
-  const lotteryContract = useLottery()
-  const { fastRefresh } = useRefresh()
+	const [ tickets, setTickets ] = useState([])
+	const { account } = useWallet()
+	const ticketsContract = useLotteryTicket()
+	const lotteryContract = useLottery()
+	const { fastRefresh } = useRefresh()
 
-  useEffect(() => {
-    const fetchBalance = async () => {
-      const res = await getTickets(lotteryContract, ticketsContract, account, lotteryNumber)
-      setTickets(res)
-    }
+	useEffect(
+		() => {
+			const fetchBalance = async () => {
+				const res = await getTickets(lotteryContract, ticketsContract, account, lotteryNumber)
+				setTickets(res)
+			}
 
-    if (account && lotteryContract && ticketsContract) {
-      fetchBalance()
-    }
-  }, [account, lotteryContract, ticketsContract, fastRefresh, lotteryNumber])
+			if (account && lotteryContract && ticketsContract) {
+				fetchBalance()
+			}
+		},
+		[ account, lotteryContract, ticketsContract, fastRefresh, lotteryNumber ]
+	)
 
-  return tickets
+	return tickets
 }
 
 export const useTotalRewards = () => {
-  const [rewards, setRewards] = useState(new BigNumber(0))
-  const lotteryContract = useLottery()
-  const { fastRefresh } = useRefresh()
+	const [ rewards, setRewards ] = useState(new BigNumber(0))
+	const lotteryContract = useLottery()
+	const { fastRefresh } = useRefresh()
 
-  useEffect(() => {
-    const fetchBalance = async () => {
-      const res = await getTotalRewards(lotteryContract)
-      setRewards(new BigNumber(res))
-    }
+	useEffect(
+		() => {
+			const fetchBalance = async () => {
+				const res = await getTotalRewards(lotteryContract)
+				setRewards(new BigNumber(res))
+			}
 
-    if (lotteryContract) {
-      fetchBalance()
-    }
-  }, [lotteryContract, fastRefresh])
+			if (lotteryContract) {
+				fetchBalance()
+			}
+		},
+		[ lotteryContract, fastRefresh ]
+	)
 
-  return rewards
+	return rewards
 }
 
 export const useTotalClaim = () => {
-  const [claimAmount, setClaimAmount] = useState(new BigNumber(0))
-  const [claimLoading, setClaimLoading] = useState(false)
-  const { account } = useWallet()
-  const ticketsContract = useLotteryTicket()
-  const lotteryContract = useLottery()
+	const [ claimAmount, setClaimAmount ] = useState(new BigNumber(0))
+	const [ claimLoading, setClaimLoading ] = useState(false)
+	const { account } = useWallet()
+	const ticketsContract = useLotteryTicket()
+	const lotteryContract = useLottery()
 
-  const fetchBalance = useCallback(async () => {
-    setClaimLoading(true)
-    const claim = await getTotalClaim(lotteryContract, ticketsContract, account)
-    setClaimAmount(claim)
-    setClaimLoading(false)
-  }, [account, lotteryContract, ticketsContract])
+	const fetchBalance = useCallback(
+		async () => {
+			setClaimLoading(true)
+			const claim = await getTotalClaim(lotteryContract, ticketsContract, account)
+			setClaimAmount(claim)
+			setClaimLoading(false)
+		},
+		[ account, lotteryContract, ticketsContract ]
+	)
 
-  useEffect(() => {
-    if (account && lotteryContract && ticketsContract) {
-      fetchBalance()
-    }
-  }, [account, fetchBalance, lotteryContract, ticketsContract])
+	useEffect(
+		() => {
+			if (account && lotteryContract && ticketsContract) {
+				fetchBalance()
+			}
+		},
+		[ account, fetchBalance, lotteryContract, ticketsContract ]
+	)
 
-  return { claimLoading, claimAmount }
+	return { claimLoading, claimAmount }
 }
 
 export const useWinningNumbers = () => {
-  const [winngNumbers, setWinningNumbers] = useState([0, 0, 0, 0])
-  const lotteryContract = useLottery()
-  const { fastRefresh } = useRefresh()
+	const [ winngNumbers, setWinningNumbers ] = useState([ 0, 0, 0, 0 ])
+	const lotteryContract = useLottery()
+	const { fastRefresh } = useRefresh()
 
-  useEffect(() => {
-    const fetchBalance = async () => {
-      const rewards = await getWinningNumbers(lotteryContract)
-      setWinningNumbers(rewards)
-    }
+	useEffect(
+		() => {
+			const fetchBalance = async () => {
+				const rewards = await getWinningNumbers(lotteryContract)
+				setWinningNumbers(rewards)
+			}
 
-    if (lotteryContract) {
-      fetchBalance()
-    }
-  }, [fastRefresh, lotteryContract, setWinningNumbers])
+			if (lotteryContract) {
+				fetchBalance()
+			}
+		},
+		[ fastRefresh, lotteryContract, setWinningNumbers ]
+	)
 
-  return winngNumbers
+	return winngNumbers
 }
 
 export const useMatchingRewardLength = (numbers) => {
-  const [matchingNumbers, setMatchingNumbers] = useState(0)
-  const lotteryContract = useLottery()
-  const { fastRefresh } = useRefresh()
+	const [ matchingNumbers, setMatchingNumbers ] = useState(0)
+	const lotteryContract = useLottery()
+	const { fastRefresh } = useRefresh()
 
-  useEffect(() => {
-    const fetchBalance = async () => {
-      const matchedNumbaers = await getMatchingRewardLength(lotteryContract, numbers)
-      setMatchingNumbers(matchedNumbaers)
-    }
+	useEffect(
+		() => {
+			const fetchBalance = async () => {
+				const matchedNumbaers = await getMatchingRewardLength(lotteryContract, numbers)
+				setMatchingNumbers(matchedNumbaers)
+			}
 
-    if (lotteryContract) {
-      fetchBalance()
-    }
-  }, [lotteryContract, numbers, fastRefresh])
+			if (lotteryContract) {
+				fetchBalance()
+			}
+		},
+		[ lotteryContract, numbers, fastRefresh ]
+	)
 
-  return matchingNumbers
+	return matchingNumbers
 }
 
 export default useTickets
