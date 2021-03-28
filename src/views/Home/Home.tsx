@@ -8,26 +8,27 @@ import LotteryCard from './components/LotteryCard'
 import CakeStats from './components/CakeStats'
 import TotalValueLockedCard from './components/TotalValueLockedCard'
 import TwitterCard from './components/TwitterCard'
+import HeroTimer from './components/HeroTimer'
 
 const Hero = styled.div`
-  align-items: center;
-  background-image: url('/images/Magikarp/GyaCenter.png');
-  background-repeat: no-repeat;
-  background-position: top center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  margin-bottom: 32px;
-  padding-top: 116px;
-  text-align: center;
+	align-items: center;
+	background-image: url('/images/Magikarp/GyaCenter.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+	margin-bottom: 32px;
+	padding-top: 116px;
+	text-align: center;
 
-  ${({ theme }) => theme.mediaQueries.lg} {
-    background-image: url('/images/Magikarp/HomeMagiLeft.png'), url('/images/Magikarp/HomeCoinRight.png');
-    background-position: left center, right center;
-    height: 165px;
-    padding-top: 0;
-  }
+	${({ theme }) => theme.mediaQueries.lg} {
+		background-image: url('/images/Magikarp/HomeMagiLeft.png'), url('/images/Magikarp/HomeCoinRight.png');
+		background-position: left center, right center;
+		height: 165px;
+		padding-top: 0;
+	}
 `
 
 const Cards = styled(BaseLayout)`
@@ -54,26 +55,27 @@ const Cards = styled(BaseLayout)`
 `
 
 const Home: React.FC = () => {
-  const TranslateString = useI18n()
+	const TranslateString = useI18n()
 
-  return (
-    <Page>
-      <Hero>
-        <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {TranslateString(576, 'Magikarp Finance')}
-        </Heading>
-        <Text>{TranslateString(578, 'One app to gather them all')}</Text>
-      </Hero>
-      <div>
-        <Cards>
-          <FarmStakingCard />
-          <TwitterCard/>
-          <CakeStats />
-          <TotalValueLockedCard />
-        </Cards>
-      </div>
-    </Page>
-  )
+	return (
+		<Page>
+			<HeroTimer />
+			<Hero>
+				<Heading as='h1' size='xl' mb='24px' color='secondary'>
+					{TranslateString(576, 'Magikarp Finance')}
+				</Heading>
+				<Text>{TranslateString(578, 'One app to gather them all')}</Text>
+			</Hero>
+			<div>
+				<Cards>
+					<FarmStakingCard />
+					<TwitterCard />
+					<CakeStats />
+					<TotalValueLockedCard />
+				</Cards>
+			</div>
+		</Page>
+	)
 }
 
 export default Home
