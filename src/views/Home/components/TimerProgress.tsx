@@ -31,7 +31,8 @@ const TimerProgress = () => {
 	const [ Timers, setTimers ] = useState({ ProgressPercent: 0, diffText: '' })
 	useEffect(() => {
 		const interval = setInterval(() => {
-			const currentMillis = new Date().getTime()
+			const offset = new Date().getTimezoneOffset()
+			const currentMillis = new Date().getTime() + offset * 60000
 			const iniDate = new Date('03/28/2021 23:00:00')
 			const endDate = new Date('03/29/2021 23:00:00')
 			const iniDateMillis = iniDate.getTime()
