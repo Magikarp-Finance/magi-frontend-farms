@@ -37,6 +37,11 @@ const config: MenuEntry[] = [
 		href: '/pools'
 	},
 	{
+		label: 'Gya Shrine',
+		icon: 'ShrineIcon',
+		href: '/shrine'
+	},
+	{
 		label: 'Magi',
 		icon: 'MagiIcon',
 		items: [

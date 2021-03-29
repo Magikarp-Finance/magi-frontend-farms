@@ -1,40 +1,81 @@
-import { PoolConfig, QuoteToken, PoolCategory } from './types'
+import tokens from './tokens'
+import { PoolCategory, PoolConfig } from './types'
 
 const pools: PoolConfig[] = [
-  // {
-  //   sousId: 0,
-  //   tokenName: 'CAKE',
-  //   stakingTokenName: QuoteToken.CAKE,
-  //   stakingTokenAddress: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-  //   contractAddress: {
-  //     97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
-  //     56: '0x73feaa1eE314F8c655E354234017bE2193C9E24E',
-  //   },
-  //   poolCategory: PoolCategory.CORE,
-  //   projectLink: 'https://pancakeswap.finance/',
-  //   harvest: true,
-  //   tokenPerBlock: '10',
-  //   sortOrder: 1,
-  //   isFinished: false,
-  //   tokenDecimals: 18,
-  // }, 
-  // {
-  //   sousId: 1,
-  //   tokenName: 'TWT',
-  //   stakingTokenName: QuoteToken.SYRUP,
-  //   stakingTokenAddress: '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
-  //   contractAddress: {
-  //     97: '0xAfd61Dc94f11A70Ae110dC0E0F2061Af5633061A',
-  //     56: '0xAfd61Dc94f11A70Ae110dC0E0F2061Af5633061A',
-  //   },
-  //   poolCategory: PoolCategory.CORE,
-  //   projectLink: 'https://trustwallet.com/',
-  //   harvest: true,
-  //   tokenPerBlock: '20',
-  //   sortOrder: 999,
-  //   isFinished: true,
-  //   tokenDecimals: 18,
-  // },
+	/*
+	{
+		sousId: 2,
+		stakingToken: tokens.blzd,
+		earningToken: tokens.bnb,
+		contractAddress: {
+			97: '',
+			56: '0x481055C4182B9A5e90d8E7EDe9f65b957dC0Ec22'
+		},
+		poolCategory: PoolCategory.CORE,
+		harvest: true,
+		tokenPerBlock: '0.002480',
+		sortOrder: 999,
+		isFinished: false
+	},
+	{
+		sousId: 3,
+		stakingToken: tokens.blzd,
+		earningToken: tokens.bifi,
+		contractAddress: {
+			97: '',
+			56: '0x95b3389f41dbf513De5710A68220efF5a42dB068'
+		},
+		poolCategory: PoolCategory.CORE,
+		harvest: true,
+		tokenPerBlock: '0.00009920',
+		sortOrder: 999,
+		isFinished: false
+	},
+
+	{
+		sousId: 4,
+		stakingToken: tokens.gya,
+		earningToken: tokens.Absol,
+		contractAddress: {
+			97: '',
+			56: '0xE19848e92311E04BE3dE1C451E0c7C597B73Ef58'
+		},
+		poolCategory: PoolCategory.CORE,
+		harvest: true,
+		tokenPerBlock: '0.5',
+		sortOrder: 999,
+		isFinished: false
+	}, */
+	/*
+	{
+		sousId: 1,
+		stakingToken: tokens.gya,
+		earningToken: tokens.magi,
+		contractAddress: {
+			97: '',
+			56: '0x21220651d7ff5D774E06CffE5a8f6b5296882694'
+		},
+		poolCategory: PoolCategory.CORE,
+		harvest: true,
+		tokenPerBlock: '95',
+		sortOrder: 999,
+		isFinished: false
+	},
+	*/
+	{
+		sousId: 2,
+		stakingToken: tokens.gya,
+		earningToken: tokens.cake,
+		contractAddress: {
+			97: '',
+			56: '0xBb8AC99fD90F7640a8A12aD048aC4E867138477E'
+		},
+		poolCategory: PoolCategory.CORE,
+		harvest: true,
+		tokenPerBlock: '95',
+		sortOrder: 999,
+		isFinished: false
+	}
 ]
 
 export default pools

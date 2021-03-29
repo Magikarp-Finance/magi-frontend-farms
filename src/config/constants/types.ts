@@ -21,6 +21,7 @@ export interface Ifo {
 
 export enum QuoteToken {
 	'BNB' = 'BNB',
+	'BLZD' = 'BLZD',
 	'CAKE' = 'CAKE',
 	'SYRUP' = 'SYRUP',
 	'BUSD' = 'BUSD',
@@ -39,8 +40,16 @@ export interface Address {
 	56: string
 }
 
+export interface Token {
+	symbol: string
+	address?: Address
+	decimals?: number
+	projectLink?: string
+}
+
 export interface FarmConfig {
 	pid: number
+	risk?: number
 	lpSymbol: string
 	lpAddresses: Address
 	tokenSymbol: string
@@ -50,7 +59,7 @@ export interface FarmConfig {
 	multiplier?: string
 	isTokenOnly?: boolean
 	isCommunity?: boolean
-	risk: number
+	isHighlight?: boolean
 	dual?: {
 		rewardPerBlock: number
 		earnLabel: string
@@ -60,19 +69,15 @@ export interface FarmConfig {
 
 export interface PoolConfig {
 	sousId: number
-	image?: string
-	tokenName: string
-	stakingTokenName: QuoteToken
+	earningToken: Token
+	stakingToken: Token
 	stakingLimit?: number
-	stakingTokenAddress?: string
 	contractAddress: Address
 	poolCategory: PoolCategory
-	projectLink: string
 	tokenPerBlock: string
 	sortOrder?: number
 	harvest?: boolean
 	isFinished?: boolean
-	tokenDecimals: number
 }
 
 export type Nft = {
@@ -84,5 +89,5 @@ export type Nft = {
 	sortOrder: number
 	bunnyId: number
 	collection?: string
-	pathCollection?: string
+	pathCollection: string
 }
