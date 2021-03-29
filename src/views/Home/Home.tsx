@@ -59,7 +59,10 @@ const Home: React.FC = () => {
 
 	return (
 		<Page>
+<<<<<<< HEAD
 			{/* <HeroTimer /> */}
+=======
+>>>>>>> cb0d11dc11af66a8ee8b046813d1204481292ec8
 			<Hero>
 				<Heading as='h1' size='xl' mb='24px' color='secondary'>
 					{TranslateString(576, 'Magikarp Finance')}

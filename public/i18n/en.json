@@ -759,7 +759,11 @@
     {
       "data": {
         "stringId": 578,
+<<<<<<< HEAD
         "text": "Farms are back with a new addition Gya Shrine"
+=======
+        "text": "Farms and Pools are back"
+>>>>>>> cb0d11dc11af66a8ee8b046813d1204481292ec8
       }
     },
     {
