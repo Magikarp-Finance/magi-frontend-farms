@@ -36,7 +36,7 @@ const Farm: React.FC = () => {
           <ul>
 
             <li>{TranslateString(999, 'Stake GYA to earn a new Token.')}</li>
-            <li>{TranslateString(404, 'Harvesting burns 99% of the stacked GYA tokens.')}</li>
+            <li>{TranslateString(404, 'Unstake burns 99% of the stacked GYA tokens.')}</li>
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
           </ul>
         </div>
