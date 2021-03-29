@@ -46,16 +46,17 @@ const TimerProgress = () => {
 
 	return (
 		<ProgressWrapper>
-			<Progress primaryStep={Timers.ProgressPercent * 100} />
+			<Progress primaryStep={100} />
 			<TopTextWrapper>
 				<StyledPrimaryText fontSize='20px' bold color='contrast'>
-					{Timers.diffText}
+					We are in proccess of deploy Farms.
+					{/* Timers.diffText} */}
 				</StyledPrimaryText>
 				<Text fontSize='20px' bold color='invertedContrast' />
 			</TopTextWrapper>
 			<BottomTextWrapper>
-				<StyledPrimaryText fontSize='20px' color='contrast'>
-					Until farms get back
+				<StyledPrimaryText fontSize='15px' color='contrast'>
+					This banner will dissapear once farms are deployed.
 				</StyledPrimaryText>
 			</BottomTextWrapper>
 		</ProgressWrapper>
