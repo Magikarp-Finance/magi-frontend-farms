@@ -27,7 +27,9 @@ const BottomTextWrapper = styled.div`
 const StyledPrimaryText = styled(Text)`
   margin-right: 16px;
 `
+
 const TimerProgress = () => {
+	/*
 	const [ Timers, setTimers ] = useState({ ProgressPercent: 0, diffText: '' })
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -43,6 +45,7 @@ const TimerProgress = () => {
 		}, 1000)
 		return () => clearInterval(interval)
 	}, [])
+	*/
 
 	return (
 		<ProgressWrapper>
