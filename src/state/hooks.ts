@@ -95,7 +95,7 @@ export const usePriceBnbBusd = (): BigNumber => {
 }
 
 export const usePriceBlzdBusd = (): BigNumber => {
-	const pid = 1 // BLZD-BUSD LP
+	const pid = 0 // GYA-BUSD LP
 	const farm = useFarmFromPid(pid)
 	return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO
 }
