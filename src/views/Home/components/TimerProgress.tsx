@@ -29,37 +29,36 @@ const StyledPrimaryText = styled(Text)`
 `
 
 const TimerProgress = () => {
-	/*
 	const [ Timers, setTimers ] = useState({ ProgressPercent: 0, diffText: '' })
 	useEffect(() => {
 		const interval = setInterval(() => {
 			const offset = new Date().getTimezoneOffset()
 			const currentMillis = new Date().getTime() + offset * 60000
-			const iniDate = new Date('03/28/2021 23:00:00')
-			const endDate = new Date('03/29/2021 15:00:00')
+			const iniDate = new Date('03/31/2021 12:30:00')
+			const endDate = new Date('03/31/2021 15:00:00')
 			const iniDateMillis = iniDate.getTime()
 			const endDateMillis = endDate.getTime()
 			const ProgressPer = 1 - (endDateMillis - currentMillis) / (endDateMillis - iniDateMillis)
 			const diff = timeDiffCalc(endDate.getTime(), currentMillis)
+			console.log(ProgressPer * 100)
 			setTimers({ ProgressPercent: ProgressPer, diffText: diff })
 		}, 1000)
+
 		return () => clearInterval(interval)
 	}, [])
-	*/
 
 	return (
 		<ProgressWrapper>
-			<Progress primaryStep={100} />
+			<Progress primaryStep={Timers.ProgressPercent * 100} />
 			<TopTextWrapper>
 				<StyledPrimaryText fontSize='20px' bold color='contrast'>
-					We are in proccess of deploy Farms.
-					{/* Timers.diffText} */}
+					{Timers.diffText}
 				</StyledPrimaryText>
 				<Text fontSize='20px' bold color='invertedContrast' />
 			</TopTextWrapper>
 			<BottomTextWrapper>
 				<StyledPrimaryText fontSize='15px' color='contrast'>
-					This banner will dissapear once farms are deployed.
+					Shrine is being built 📿
 				</StyledPrimaryText>
 			</BottomTextWrapper>
 		</ProgressWrapper>

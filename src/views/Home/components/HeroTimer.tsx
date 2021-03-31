@@ -70,7 +70,7 @@ const Hero = () => {
 		<StyledHero>
 			<StyledContainer>
 				<LeftWrapper>
-					<Title>{TranslateString(999, 'Farms and Pools')}</Title>
+					<Title>{TranslateString(999, '⛩️ New Shrine')}</Title>
 					<Blurb>{TranslateString(999, '')}</Blurb>
 					<Blurb>{TranslateString(999, '')}</Blurb>
 				</LeftWrapper>

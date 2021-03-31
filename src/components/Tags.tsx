@@ -3,7 +3,7 @@ import { Tag, VerifiedIcon, CommunityIcon, BinanceIcon } from '@pancakeswap-libs
 
 const NoFeeTag = () => (
 	<Tag variant='success' outline startIcon={<VerifiedIcon />}>
-		No Fees
+		Cake
 	</Tag>
 )
 
@@ -15,13 +15,12 @@ const RiskTag = ({ risk }) => (
 
 const CoreTag = () => (
 	<Tag variant='secondary' outline startIcon={<VerifiedIcon />}>
-		Magi
+		finished
 	</Tag>
 )
-
 const CommunityTag = () => (
 	<Tag variant='textSubtle' outline startIcon={<CommunityIcon />}>
-		Community
+		LP
 	</Tag>
 )
 

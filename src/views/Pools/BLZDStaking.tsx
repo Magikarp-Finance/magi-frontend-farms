@@ -35,9 +35,9 @@ const Farm: React.FC = () => {
           </Heading>
           <ul>
 
-            <li>{TranslateString(999, 'Stake GYA to earn a new Token.')}</li>
-            <li>{TranslateString(404, 'Unstake burns 99% of the stacked GYA tokens.')}</li>
-            <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
+            <li>Stake GYA to earn a new Token</li>
+            <li>Unstake burns 50% of the stacked GYA tokens.</li>
+            <li>Rewards are calculated per block.</li>
           </ul>
         </div>
         <div style={{ textAlign: 'right' }}>
