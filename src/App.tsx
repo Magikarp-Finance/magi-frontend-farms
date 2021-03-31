@@ -18,6 +18,8 @@ const Pools = lazy(() => import('./views/Pools'))
 // const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
 // const Nft = lazy(() => import('./views/Nft'))
+// const LotteryGya = lazy(() => import('./views/GyaLotto'))
+// const LotteryMagy = lazy(() => import('./views/MagyLotto'))
 
 // This config is required for number formating
 BigNumber.config({
@@ -58,6 +60,13 @@ const App: React.FC = () => {
 						<Route path='/shrine'>
 							<Pools />
 						</Route>
+
+						{/* <Route path='/gyalotto'> */}
+						{/* 	<LotteryGya />		 */}
+						{/* </Route>				 */}
+						{/* <Route path='/gyalotto'> */}
+						{/* 	<LotteryGya />		 */}
+						{/* </Route>				 */}
 						{/* <Route path="/pools"> */}
 						{/*  <Pools /> */}
 						{/* </Route> */}

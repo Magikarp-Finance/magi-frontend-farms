@@ -77,25 +77,24 @@ const pools: PoolConfig[] = [
 		sortOrder: 999,
 		isFinished: true,
 		isHighlighted: true
-	}
-	/*
+	},
+
 	{
 		sousId: 2,
 		poolName: 'MAGI-BNB LP Shrine',
 		stakingToken: tokens.gya,
-		earningToken: tokens.magi,
+		earningToken: tokens.magiLP,
 		contractAddress: {
 			97: '',
-			56: '0xc6E060e33e06B5fd64798b89fc73E04126f89D4C'
+			56: '0x489412800228150649780Bc7C4bc374CC8755b63'
 		},
 		poolCategory: PoolCategory.COMMUNITY,
 		harvest: true,
-		tokenPerBlock: '0.000001127829821916',
+		tokenPerBlock: '0.000001243054309766',
 		sortOrder: 999,
 		isFinished: false,
 		isHighlighted: true
 	}
-	*/
 ]
 
 export default pools

@@ -8,6 +8,15 @@ const tokens = {
 		decimals: 18,
 		projectLink: 'https://magikarp.finance/'
 	},
+	magiLP: {
+		symbol: 'MAGILP',
+		address: {
+			56: '0xcf6aaDC9cD4E572f5E96426a58da70984881e887',
+			97: ''
+		},
+		decimals: 18,
+		projectLink: 'https://magikarp.finance/'
+	},
 	gya: {
 		symbol: 'GYA',
 		address: {
