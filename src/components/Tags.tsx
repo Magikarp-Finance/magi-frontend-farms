@@ -3,7 +3,7 @@ import { Tag, VerifiedIcon, CommunityIcon, BinanceIcon } from '@pancakeswap-libs
 
 const NoFeeTag = () => (
 	<Tag variant='success' outline startIcon={<VerifiedIcon />}>
-		Cake
+		No Fees
 	</Tag>
 )
 
