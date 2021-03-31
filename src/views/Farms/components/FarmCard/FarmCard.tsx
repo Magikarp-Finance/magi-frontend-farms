@@ -13,6 +13,7 @@ import CardHeading from './CardHeading'
 import CardActionsContainer from './CardActionsContainer'
 import ApyButton from './ApyButton'
 
+
 export interface FarmWithStakedValue extends Farm {
   apy?: BigNumber
 }
@@ -130,7 +131,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, removed, cakePrice, bnbPrice,
     })
 
   const { quoteTokenAdresses, quoteTokenSymbol, tokenAddresses, risk } = farm
-  
+
   return (
     <FCard>
       {(farm.isHighlight) && <StyledCardAccent />}

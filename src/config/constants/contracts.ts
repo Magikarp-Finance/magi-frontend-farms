@@ -26,5 +26,9 @@ export default {
 	busd: {
 		56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
 		97: ''
+	},
+	magiLP: {
+		56: '0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c',
+		97: ''
 	}
 }
