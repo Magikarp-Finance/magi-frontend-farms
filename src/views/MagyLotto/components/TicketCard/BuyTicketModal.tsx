@@ -29,7 +29,7 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
 
 	const maxTickets = useMemo(
 		() => {
-			return parseInt(getFullDisplayBalance(max.div(new BigNumber(50))))
+			return parseInt(getFullDisplayBalance(max.div(new BigNumber(1))))
 		},
 		[ max ]
 	)
