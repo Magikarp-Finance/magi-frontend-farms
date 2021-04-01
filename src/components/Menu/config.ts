@@ -41,6 +41,11 @@ const config: MenuEntry[] = [
 		icon: 'ShrineIcon',
 		href: '/shrine'
 	},
+	{
+		label: 'Lottery',
+		icon: 'TicketIcon',
+		href: '/lottery'
+	},
 	/*
 	{
 		label: 'Lottery',
@@ -105,9 +110,9 @@ const config: MenuEntry[] = [
 	//   href: '/pools',
 	// },
 	{
-	  label: 'Lottery',
-	  icon: 'TicketIcon',
-	  href: '/lottery',
+		label: 'Lottery',
+		icon: 'TicketIcon',
+		href: '/lottery'
 	},
 	// {
 	//   label: 'NFT',

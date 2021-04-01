@@ -60,23 +60,20 @@ const App: React.FC = () => {
 						<Route path='/shrine'>
 							<Pools />
 						</Route>
-<<<<<<< HEAD
-						<Route path='/lottery'> 
-							<Lottery /> 
-						</Route> 
-=======
 
+						<Route path='/lottery'>
+							<Lottery />
+						</Route>
 						{/* <Route path='/gyalotto'> */}
 						{/* 	<LotteryGya />		 */}
 						{/* </Route>				 */}
 						{/* <Route path='/gyalotto'> */}
 						{/* 	<LotteryGya />		 */}
 						{/* </Route>				 */}
->>>>>>> e6c7fa0b2d83aa1288d61fe3ed054154cba6f870
 						{/* <Route path="/pools"> */}
 						{/*  <Pools /> */}
 						{/* </Route> */}
-						
+
 						{/* <Route path="/ifo"> */}
 						{/*  <Ifos /> */}
 						{/* </Route> */}

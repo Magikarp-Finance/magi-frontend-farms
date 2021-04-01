@@ -88,8 +88,8 @@ const BuyTicketModal: React.FC<BuyTicketModalProps> = ({ max, onDismiss }) => {
 				availableSymbol='GYA'
 			/>
 			<div>
-				<Tips>{TranslateString(456, 'Your amount must be a multiple of 10 GYA')}</Tips>
-				<Tips>{TranslateString(458, '1 Ticket = 10 GYA')}</Tips>
+				<Tips>{TranslateString(456, 'Your amount must be a multiple of 1 GYA')}</Tips>
+				<Tips>{TranslateString(458, '1 Ticket = 1 GYA')}</Tips>
 			</div>
 			<div>
 				<Announce>

@@ -123,7 +123,7 @@
     {
       "data": {
         "stringId": 320,
-        "text": "Aqua Farms are back !"
+        "text": "Stake LP Tokens to earn GYA !"
       }
     },
     {
@@ -435,19 +435,19 @@
     {
       "data": {
         "stringId": 454,
-        "text": "%num% Magi Available"
+        "text": "%num% Gya Available"
       }
     },
     {
       "data": {
         "stringId": 456,
-        "text": "Your amount must be a multiple of 10 Magi"
+        "text": "Your amount must be a multiple of 1 GYA"
       }
     },
     {
       "data": {
         "stringId": 458,
-        "text": "1 Ticket = 10 Magi"
+        "text": "1 Ticket = 1 GYA"
       }
     },
     {
@@ -759,17 +759,13 @@
     {
       "data": {
         "stringId": 578,
-<<<<<<< HEAD
-        "text": "Farms are back with a new addition Gya Shrine"
-=======
-        "text": "Farms and Pools are back"
->>>>>>> cb0d11dc11af66a8ee8b046813d1204481292ec8
+        "text": "Stake LP tokens to earn GYA"
       }
     },
     {
       "data": {
         "stringId": 580,
-        "text": "Stake Magi to earn new tokens."
+        "text": "Stake tokens to earn GYA."
       }
     },
     {
@@ -1213,7 +1209,7 @@
     {
       "data": {
         "stringId": 10000,
-        "text": " Stake tokens to earn GYA"
+        "text": "Deposit Fee will be used to buyback GYA"
       }
     },
     {
@@ -1225,7 +1221,7 @@
     {
       "data": {
         "stringId": 10002,
-        "text": "Swimming pools are back !"
+        "text": "Stake Tokens to earn GYA"
       }
     },
     {
