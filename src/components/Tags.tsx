@@ -15,13 +15,12 @@ const RiskTag = ({ risk }) => (
 
 const CoreTag = () => (
 	<Tag variant='secondary' outline startIcon={<VerifiedIcon />}>
-		Magi
+		finished
 	</Tag>
 )
-
 const CommunityTag = () => (
 	<Tag variant='textSubtle' outline startIcon={<CommunityIcon />}>
-		Community
+		LP
 	</Tag>
 )
 

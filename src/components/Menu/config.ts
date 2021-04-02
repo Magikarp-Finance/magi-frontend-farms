@@ -41,6 +41,24 @@ const config: MenuEntry[] = [
 		icon: 'ShrineIcon',
 		href: '/shrine'
 	},
+	/*
+	{
+		label: 'Lottery',
+		icon: 'TicketIcon',
+		href: '/lottery',
+		items: [
+			{
+				label: 'Magi Lottery',
+
+				href: '/magilotto'
+			},
+			{
+				label: 'Gya Lottery',
+				href: '/gyalotto'
+			}
+		]
+	},
+	*/
 	{
 		label: 'Magi',
 		icon: 'MagiIcon',
@@ -151,12 +169,12 @@ const config: MenuEntry[] = [
 		label: 'Audit by Techrate (MAGI)',
 		icon: 'AuditIcon',
 		href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/Magikarp%20Finance.pdf'
+	},
+	{
+		label: 'Audit by Techrate (GYARADOS)',
+		icon: 'AuditIcon',
+		href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/Gya.pdf'
 	}
-	//  {
-	//    label: 'Audit by Techrate (GYARADOS)',
-	//    icon: 'AuditIcon',
-	//    href: 'https://certik.org/projects/goose-finance',
-	//  },
 ]
 
 export default config

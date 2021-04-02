@@ -5,7 +5,16 @@ const tokens = {
 			56: '0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c',
 			97: ''
 		},
-		decimals: 8,
+		decimals: 18,
+		projectLink: 'https://magikarp.finance/'
+	},
+	magiLP: {
+		symbol: 'MAGILP',
+		address: {
+			56: '0xcf6aaDC9cD4E572f5E96426a58da70984881e887',
+			97: ''
+		},
+		decimals: 18,
 		projectLink: 'https://magikarp.finance/'
 	},
 	gya: {

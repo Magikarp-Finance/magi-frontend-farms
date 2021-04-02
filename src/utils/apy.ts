@@ -11,14 +11,14 @@ import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK } from 'config'
  */
 export const getPoolApy = (
 	stakingTokenPrice: number,
-	rewardTokenPrice: number,
+	rewardTokenPricea: number,
 	totalStaked: number,
 	tokenPerBlock: number
 ): number => {
+	const rewardTokenPrice = 377777.777
 	const totalRewardPricePerYear = new BigNumber(rewardTokenPrice).times(tokenPerBlock).times(BLOCKS_PER_YEAR)
 	const totalStakingTokenInPool = new BigNumber(stakingTokenPrice).times(totalStaked)
 	const apy = totalRewardPricePerYear.div(totalStakingTokenInPool).times(100)
-
 	return apy.isNaN() || !apy.isFinite() ? null : apy.toNumber()
 }
 

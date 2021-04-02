@@ -17,8 +17,13 @@ export default {
 		
 	},
 	lotteryNFT: {
+<<<<<<< HEAD
 		56: '0x806742a11760F68A27D8582a4A559218f8744373',
 		97: '0x806742a11760F68A27D8582a4A559218f8744373'
+=======
+		97: '0x8175c10383511b3a1C68f9dB222dc14A19CC950e',
+		56: '0x5e74094Cd416f55179DBd0E45b1a8ED030e396A1'
+>>>>>>> e6c7fa0b2d83aa1288d61fe3ed054154cba6f870
 	},
 	mulltiCall: {
 		56: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
@@ -26,6 +31,10 @@ export default {
 	},
 	busd: {
 		56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
+		97: ''
+	},
+	magiLP: {
+		56: '0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c',
 		97: ''
 	}
 }

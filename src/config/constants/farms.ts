@@ -46,7 +46,7 @@ const farms: FarmConfig[] = [
 		tokenSymbol: 'MAGI',
 		tokenAddresses: {
 			97: '',
-			56: '0xc603b1fba6a5b502be4f1ab27591bf4e75a3460c'
+			56: '0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c'
 		},
 		quoteTokenSymbol: QuoteToken.CAKE,
 		quoteTokenAdresses: contracts.cake,

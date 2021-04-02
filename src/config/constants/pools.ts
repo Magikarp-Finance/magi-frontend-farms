@@ -63,7 +63,8 @@ const pools: PoolConfig[] = [
 	},
 	*/
 	{
-		sousId: 2,
+		sousId: 1,
+		poolName: 'Cake Shrine',
 		stakingToken: tokens.gya,
 		earningToken: tokens.cake,
 		contractAddress: {
@@ -74,7 +75,25 @@ const pools: PoolConfig[] = [
 		harvest: true,
 		tokenPerBlock: '95',
 		sortOrder: 999,
-		isFinished: false
+		isFinished: true,
+		isHighlighted: true
+	},
+
+	{
+		sousId: 2,
+		poolName: 'MAGI-BNB LP Shrine',
+		stakingToken: tokens.gya,
+		earningToken: tokens.magiLP,
+		contractAddress: {
+			97: '',
+			56: '0x489412800228150649780Bc7C4bc374CC8755b63'
+		},
+		poolCategory: PoolCategory.COMMUNITY,
+		harvest: true,
+		tokenPerBlock: '0.000001243054309766',
+		sortOrder: 999,
+		isFinished: true,
+		isHighlighted: true
 	}
 ]
 

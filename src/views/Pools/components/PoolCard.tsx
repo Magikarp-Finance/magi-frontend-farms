@@ -86,6 +86,8 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
     isFinished,
     userData,
     stakingLimit,
+    isHighlighted,
+    poolName
   } = pool
 
   // Pools using native BNB behave differently than pools using a token
@@ -162,12 +164,12 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
     
 
     <Card isActive={isCardActive} isFinished={isFinished && sousId !== 0}>
-    <StyledCardAccent />  
+    {isHighlighted ?  <StyledCardAccent/>:' ' }
       {isFinished && sousId !== 0 && <PoolFinishedSash />}
       <div style={{ padding: '24px' }}>
         <CardTitle isFinished={isFinished && sousId !== 0}>
           {/* {isOldSyrup && '[OLD]'} {earningToken.symbol} {TranslateString(348, 'Pool')} */}
-          Cake Shrine
+          {poolName }
         </CardTitle>
         <div style={{ marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
           <div style={{ flex: 1 }}>
@@ -199,7 +201,8 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
         ) : (
           <OldSyrupTitle hasBalance={accountHasStakedBalance} />
         )}
-        <Label isFinished={isFinished && sousId !== 0} text={TranslateString(330, `${earningToken.symbol} earned`)} />
+        <Label isFinished={isFinished && sousId !== 0} text={TranslateString(330, `${earningToken.symbol} earned`)} /><br />
+        
         <StyledCardActions>
           {!account && <UnlockButton />}
           {account &&
@@ -243,6 +246,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
             <Balance fontSize="14px" isDisabled={isFinished} value={apy} decimals={2} unit="%" />
           )}
         </StyledDetails>
+
         <StyledDetails>
           <div>{TranslateString(384, 'Your Stake')}:</div>
           <Balance
