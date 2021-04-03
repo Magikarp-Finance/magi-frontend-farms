@@ -68,7 +68,8 @@ export const getTickets = async (lotteryContract, ticketsContract, account, cust
   const calls3 = finalTokenids.map((id) => [ticketsContract.options.address, 'getLotteryNumbers', [id]])
   const tickets = await multiCall(ticketAbi, calls3)
 
-  await getLotteryStatus(lotteryContract)
+  const lotteryStatus = await getLotteryStatus(lotteryContract)
+  console.log(lotteryStatus)
   return tickets
 }
 
@@ -170,6 +171,7 @@ export const getMax = async (lotteryContract) => {
 
 export const getLotteryIssueIndex = async (lotteryContract) => {
   const issueIndex = await lotteryContract.methods.issueIndex().call()
+
   return issueIndex
 }
 
@@ -180,6 +182,7 @@ export const getLotteryStatus = async (lotteryContract) => {
 export const getMatchingRewardLength = async (lotteryContract, matchNumber) => {
   let issueIdex = await lotteryContract.methods.issueIndex().call()
   const drawed = await lotteryContract.methods.drawed().call()
+
   if (!drawed) {
     issueIdex -= 1
   }

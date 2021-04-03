@@ -29,12 +29,14 @@ const Lottery: React.FC = () => {
   const [historyError, setHistoryError] = useState(false)
   const [currentLotteryNumber, setCurrentLotteryNumber] = useState(0)
   const [mostRecentLotteryNumber, setMostRecentLotteryNumber] = useState(1)
-
+  
   useEffect(() => {
+  
      fetch(`https://api.pancakeswap.com/api/lotteryHistory`)
       .then((response) => response.json())
       .then((data) => setHistoryData(data))
       .catch(() => {
+        
         setHistoryError(true)
       })
   }, [])
@@ -43,7 +45,6 @@ const Lottery: React.FC = () => {
     const getInitialLotteryIndex = async () => {
       const index = await getLotteryIssueIndex(lotteryContract)
       const previousLotteryNumber = index - 1
-
       setCurrentLotteryNumber(index)
       setMostRecentLotteryNumber(previousLotteryNumber)
     }
@@ -61,12 +62,11 @@ const Lottery: React.FC = () => {
     <>
       <Hero />
       <Page>
-
         <Divider />
         <PastLotteryDataContext.Provider
           value={{ historyError, historyData, mostRecentLotteryNumber, currentLotteryNumber }}
         >
-          <NextDrawPage /> 
+          {activeIndex === 0 ? <NextDrawPage /> : <PastDrawsPage />} 
           
         </PastLotteryDataContext.Provider>
       </Page>
@@ -77,21 +77,26 @@ const Lottery: React.FC = () => {
 export default Lottery
 
 /*
-<Wrapper>
 
-          <ButtonMenu activeIndex={activeIndex} onClick={handleClick} size="sm" variant="subtle">
-            <ButtonMenuItem>{TranslateString(999, 'Next draw')}</ButtonMenuItem>
-            <ButtonMenuItem>{TranslateString(999, 'Past draws')}</ButtonMenuItem>
-          </ButtonMenu>
-        </Wrapper>
+  <>
+      <Hero />
+      <Page>
+      <Wrapper>
+
+<ButtonMenu activeIndex={activeIndex} onClick={handleClick} size="sm" variant="subtle">
+  <ButtonMenuItem>{TranslateString(999, 'Next draw')}</ButtonMenuItem>
+  <ButtonMenuItem>{TranslateString(999, 'Past draws')}</ButtonMenuItem>
+</ButtonMenu>
+</Wrapper>
         <Divider />
         <PastLotteryDataContext.Provider
           value={{ historyError, historyData, mostRecentLotteryNumber, currentLotteryNumber }}
         >
-           {activeIndex === 0 ? <NextDrawPage /> : <PastDrawsPage />} 
+          {activeIndex === 0 ? <NextDrawPage /> : <PastDrawsPage />} 
           
         </PastLotteryDataContext.Provider>
       </Page>
+    </>
 
 
 

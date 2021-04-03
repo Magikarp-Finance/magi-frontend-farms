@@ -17,7 +17,7 @@ const Lottery = lazy(() => import('./views/Lottery'))
 const Pools = lazy(() => import('./views/Pools'))
 // const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
-// const Nft = lazy(() => import('./views/Nft'))
+const Nft = lazy(() => import('./views/Nft'))
 // const LotteryGya = lazy(() => import('./views/GyaLotto'))
 // const LotteryMagy = lazy(() => import('./views/MagyLotto'))
 
@@ -77,9 +77,9 @@ const App: React.FC = () => {
 						{/* <Route path="/ifo"> */}
 						{/*  <Ifos /> */}
 						{/* </Route> */}
-						{/* <Route path="/nft"> */}
-						{/*  <Nft /> */}
-						{/* </Route> */}
+						<Route path='/nft'>
+							<Nft />
+						</Route>
 						{/* Redirect */}
 						{/* <Route path="/staking"> */}
 						{/*  <Redirect to="/pools" /> */}

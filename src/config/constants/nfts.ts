@@ -9,7 +9,7 @@ const Nfts: Nft[] = [
 		description: "If we ain't out of here in ten minutes, we won't need no rocket to fly through space!",
 		originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/swapsies.png',
 		previewImage: 'MagiAlien.png',
-		blurImage: 'swapsies-blur.png',
+		blurImage: 'MagiAlien.png',
 		sortOrder: 999,
 		bunnyId: 0,
 		collection: 'Deep Space',
@@ -20,7 +20,7 @@ const Nfts: Nft[] = [
 		description: 'Gravity proves that the whole universe is filled with Love.',
 		originalImage: 'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/drizzle.png',
 		previewImage: 'MagiGravity.png',
-		blurImage: 'drizzle-blur.png',
+		blurImage: 'MagiGravity.png',
 		sortOrder: 999,
 		bunnyId: 1,
 		collection: 'Deep Space',
@@ -32,7 +32,20 @@ const Nfts: Nft[] = [
 		originalImage:
 			'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/blueberries.png',
 		previewImage: 'MagiMartian.png',
-		blurImage: 'blueberries-blur.png',
+		blurImage: 'MagiMartian.png',
+		sortOrder: 999,
+		bunnyId: 2,
+		collection: 'Deep Space',
+		pathCollection: 'SpaceMagi'
+	},
+	{
+		name: 'A Magikarp odyssey',
+		description:
+			'Someday, the children of the new sun will meet the children of the old. I think they will be our friends.',
+		originalImage:
+			'https://gateway.pinata.cloud/ipfs/QmXdHqg3nywpNJWDevJQPtkz93vpfoHcZWQovFz2nmtPf5/blueberries.png',
+		previewImage: 'Magi2010.png',
+		blurImage: 'Magi2010.png',
 		sortOrder: 999,
 		bunnyId: 2,
 		collection: 'Deep Space',

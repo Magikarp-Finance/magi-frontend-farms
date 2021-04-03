@@ -5,6 +5,7 @@ import { Heading, Card, CardBody, CardFooter, Text, PancakeRoundIcon, Flex, Skel
 import { getBalanceNumber } from 'utils/formatBalance'
 import useI18n from 'hooks/useI18n'
 import { useTotalRewards } from 'hooks/useTickets'
+import {usePriceCakeBusd} from 'state/hooks'
 import PastLotteryDataContext from 'contexts/PastLotteryDataContext'
 import ExpandableSectionButton from 'components/ExpandableSectionButton/ExpandableSectionButton'
 import PrizeGrid from '../PrizeGrid'
@@ -55,8 +56,8 @@ const TotalPrizesCard = () => {
   const lotteryPrizeAmount = +getBalanceNumber(useTotalRewards()).toFixed(0)
   const lotteryPrizeWithCommaSeparators = lotteryPrizeAmount.toLocaleString()
   const { currentLotteryNumber } = useContext(PastLotteryDataContext)
-
-  return (
+  const priceCakeBUSD= usePriceCakeBusd()
+    return (
     <Card>
       <CardBody>
         {account && (
@@ -79,6 +80,9 @@ const TotalPrizesCard = () => {
                 {TranslateString(999, 'Total Pot:')}
               </Text>
               <Heading size="lg">{lotteryPrizeWithCommaSeparators} GYA</Heading>
+              <Text fontSize="12px" color="textSubtle">
+                {priceCakeBUSD.multipliedBy( lotteryPrizeAmount).toFixed(0)} $
+                              </Text>
             </PrizeCountWrapper>
           </Left>
           <Right>

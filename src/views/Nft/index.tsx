@@ -9,31 +9,31 @@ import NftProvider from './contexts/NftProvider'
 import NftInfo from './components/NftInfo'
 
 const StyledHero = styled.div`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.textSubtle};
-  margin-bottom: 24px;
-  padding-bottom: 32px;
+	border-bottom: 1px solid ${({ theme }) => theme.colors.textSubtle};
+	margin-bottom: 24px;
+	padding-bottom: 32px;
 `
 
 const Nft = () => {
-  const TranslateString = useI18n()
+	const TranslateString = useI18n()
 
-  return (
-    <NftProvider>
-      <Page>
-        <StyledHero>
-          <Heading as="h1" size="xxl" color="secondary" mb="24px">
-            NFTs
-          </Heading>
-          <Heading as="h2" size="lg" color="secondary">
-            {TranslateString(999, 'Trade in for CAKE, or keep for your collection!')}
-          </Heading>
-        </StyledHero>
-        <NftInfo />
-        <NftList />
-        <HowItWorks />
-      </Page>
-    </NftProvider>
-  )
+	return (
+		<NftProvider>
+			<Page>
+				<StyledHero>
+					<Heading as='h1' size='xxl' color='secondary' mb='24px'>
+						NFTs
+					</Heading>
+					<Heading as='h2' size='lg' color='secondary'>
+						{TranslateString(999, 'Very soon NFT will join us. ')}
+					</Heading>
+				</StyledHero>
+				{/* <NftInfo /> */}
+				<NftList />
+				{/* <HowItWorks /> */}
+			</Page>
+		</NftProvider>
+	)
 }
 
 export default Nft

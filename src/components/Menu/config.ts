@@ -65,6 +65,16 @@ const config: MenuEntry[] = [
 	},
 	*/
 	{
+		label: 'NFT (soon)',
+		icon: 'NftIcon',
+		href: ''
+	},
+	{
+		label: 'Partnership (soon)',
+		icon: 'PartnerIcon',
+		href: '/'
+	},
+	{
 		label: 'Magi',
 		icon: 'MagiIcon',
 		items: [
@@ -111,11 +121,6 @@ const config: MenuEntry[] = [
 	// },
 
 	// {
-	//   label: 'NFT',
-	//   icon: 'NftIcon',
-	//   href: '/nft',
-	// },
-	// {
 	//    label: 'Info',
 	//    icon: 'InfoIcon',
 	//    items: [
@@ -161,20 +166,25 @@ const config: MenuEntry[] = [
 			}
 		]
 	},
+
 	// {
 	//  label: 'Partnerships/IFO',
 	//  icon: 'GooseIcon',
 	//  href: 'https://docs.google.com/forms/d/e/1FAIpQLSe7ycrw8Dq4C5Vjc9WNlRtTxEhFDB1Ny6jlAByZ2Y6qBo7SKg/viewform?usp=sf_link',
 	// },
 	{
-		label: 'Audit by Techrate (MAGI)',
+		label: 'Audits',
 		icon: 'AuditIcon',
-		href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/Magikarp%20Finance.pdf'
-	},
-	{
-		label: 'Audit by Techrate (GYARADOS)',
-		icon: 'AuditIcon',
-		href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/Gya.pdf'
+		items: [
+			{
+				label: 'GYA by Techrate ',
+				href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/Magikarp%20Finance.pdf'
+			},
+			{
+				label: 'GYA by Techrate ',
+				href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/Gya.pdf'
+			}
+		]
 	}
 ]
 

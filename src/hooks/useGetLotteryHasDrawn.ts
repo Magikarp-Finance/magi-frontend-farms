@@ -9,22 +9,24 @@ import { getLotteryStatus } from 'utils/lotteryUtils'
  * @return {Boolean}
  */
 const useGetLotteryHasDrawn = () => {
-  const [lotteryHasDrawn, setLotteryHasDrawn] = useState(true)
-  const { account } = useWallet()
-  const lotteryContract = useLottery()
+	const [ lotteryHasDrawn, setLotteryHasDrawn ] = useState(true)
+	const { account } = useWallet()
+	const lotteryContract = useLottery()
 
-  useEffect(() => {
-    if (account && lotteryContract) {
-      const fetchLotteryStatus = async () => {
-        const state = await getLotteryStatus(lotteryContract)
-        setLotteryHasDrawn(state)
-      }
+	useEffect(
+		() => {
+			if (account && lotteryContract) {
+				const fetchLotteryStatus = async () => {
+					const state = await getLotteryStatus(lotteryContract)
+					setLotteryHasDrawn(state)
+				}
 
-      fetchLotteryStatus()
-    }
-  }, [account, lotteryContract])
-
-  return lotteryHasDrawn
+				fetchLotteryStatus()
+			}
+		},
+		[ account, lotteryContract ]
+	)
+	return lotteryHasDrawn
 }
 
 export default useGetLotteryHasDrawn

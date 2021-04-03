@@ -174,7 +174,17 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
 						<Text as='p' color='textSubtle' mb='16px' style={{ textAlign: 'center' }}>
 							{description}
 						</Text>
-						<InfoRow>
+					</InfoBlock>
+				)}
+			</CardFooter>
+		</Card>
+	)
+}
+
+export default NftCard
+
+/*
+<InfoRow>
 							<Text>{TranslateString(999, 'Value if traded in')}:</Text>
 							<Value>1 GYA</Value>
 						</InfoRow>
@@ -186,11 +196,5 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
 							<Text>{TranslateString(999, 'Number burned')}:</Text>
 							<Value>{state.bunnyBurnCount}</Value>
 						</InfoRow>
-					</InfoBlock>
-				)}
-			</CardFooter>
-		</Card>
-	)
-}
 
-export default NftCard
+*/
