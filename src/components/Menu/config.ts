@@ -177,7 +177,7 @@ const config: MenuEntry[] = [
 		icon: 'AuditIcon',
 		items: [
 			{
-				label: 'GYA by Techrate ',
+				label: 'MAGI by Techrate ',
 				href: 'https://github.com/TechRate/Smart-Contract-Audits/blob/main/Magikarp%20Finance.pdf'
 			},
 			{

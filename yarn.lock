@@ -1836,8 +1836,8 @@
     eslint-plugin-react-hooks "^4.0.0"
 
 "@pancakeswap-libs/uikit@https://github.com/Magikarp-Finance/magi-uikit":
-  version "0.11.0"
-  resolved "https://github.com/Magikarp-Finance/magi-uikit#419ee9e9982e91d17c996357eaa59919c5fd0baf"
+  version "0.11.1"
+  resolved "https://github.com/Magikarp-Finance/magi-uikit#f64d07adb22f05baa28a9a5c0f0091e295c13cc1"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
@@ -2495,9 +2495,9 @@
     csstype "^3.0.2"
 
 "@types/styled-system@^5.1.10":
-  version "5.1.10"
-  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.10.tgz#dcf5690dd837ca49b8de1f23cb99d510c7f4ecb3"
-  integrity sha512-OmVjC9OzyUckAgdavJBc+t5oCJrNXTlzWl9vo2x47leqpX1REq2qJC49SEtzbu1OnWSzcD68Uq3Aj8TeX+Kvtg==
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@types/styled-system/-/styled-system-5.1.11.tgz#158849f3b14cdf8bf27a10f0cf87a2c3a89eb680"
+  integrity sha512-R+JxEZYa5T0HD2urViR/mdklVaGhwbNOtDoWWGQ1+z1CGs/gF1UAKCaS//YwsUwterEKpyaKxgaXyFNKF04GCA==
   dependencies:
     csstype "^3.0.2"
 
