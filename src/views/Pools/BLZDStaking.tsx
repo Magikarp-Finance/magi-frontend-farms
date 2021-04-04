@@ -13,6 +13,7 @@ import Page from 'components/layout/Page'
 import PoolCard from './components/PoolCard'
 import PoolTabButtons from './components/PoolTabButtons'
 import Divider from './components/Divider'
+import TimerProgress from '../Home/components/TimerProgress'
 
 const Farm: React.FC = () => {
   const { path } = useRouteMatch()
@@ -31,7 +32,7 @@ const Farm: React.FC = () => {
       <Hero>
         <div>
           <Heading as="h1" size="xl" mb="16px">
-            {TranslateString(999, 'GYA SHRINE')}
+            {TranslateString(999, '⛩️ GYA SHRINE')}
           </Heading>
           <ul>
 
@@ -41,7 +42,8 @@ const Farm: React.FC = () => {
           </ul>
         </div>
         <div style={{ textAlign: 'right' }}>
-          <img src="/images/blzdstakepage.png" alt="GYA Pool icon" />
+          <TimerProgress/>
+          {/* <img src="/images/blzdstakepage.png" alt="GYA Pool icon" /> */}
         </div>
       </Hero>
       <PoolTabButtons />
