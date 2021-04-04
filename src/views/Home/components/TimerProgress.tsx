@@ -35,7 +35,7 @@ const TimerProgress = () => {
 			const offset = new Date().getTimezoneOffset()
 			const currentMillis = new Date().getTime() + offset * 60000
 			const iniDate = new Date('04/04/2021 12:00:00')
-			const endDate = new Date('04/04/2021 14:00:00')
+			const endDate = new Date('04/04/2021 15:00:00')
 			const iniDateMillis = iniDate.getTime()
 			const endDateMillis = endDate.getTime()
 			const ProgressPer = 1 - (endDateMillis - currentMillis) / (endDateMillis - iniDateMillis)
