@@ -42,8 +42,8 @@ const Farm: React.FC = () => {
           </ul>
         </div>
         <div style={{ textAlign: 'right' }}>
-          <TimerProgress/>
-          {/* <img src="/images/blzdstakepage.png" alt="GYA Pool icon" /> */}
+          
+           <img src="/images/blzdstakepage.png" alt="GYA Pool icon" /> 
         </div>
       </Hero>
       <PoolTabButtons />

@@ -76,7 +76,7 @@ const pools: PoolConfig[] = [
 		tokenPerBlock: '95',
 		sortOrder: 999,
 		isFinished: true,
-		isHighlighted: true
+		isHighlighted: false
 	},
 
 	{
@@ -88,11 +88,27 @@ const pools: PoolConfig[] = [
 			97: '',
 			56: '0x489412800228150649780Bc7C4bc374CC8755b63'
 		},
-		poolCategory: PoolCategory.COMMUNITY,
+		poolCategory: PoolCategory.CORE,
 		harvest: true,
 		tokenPerBlock: '0.000001243054309766',
 		sortOrder: 999,
 		isFinished: true,
+		isHighlighted: false
+	},
+	{
+		sousId: 3,
+		poolName: 'Bake Shrine',
+		stakingToken: tokens.gya,
+		earningToken: tokens.bake,
+		contractAddress: {
+			97: '',
+			56: '0xd0bb34Da9A74727524867bE055499E05F872FABB'
+		},
+		poolCategory: PoolCategory.COMMUNITY,
+		harvest: true,
+		tokenPerBlock: '.38796',
+		sortOrder: 999,
+		isFinished: false,
 		isHighlighted: true
 	}
 ]
