@@ -34,7 +34,7 @@ const TimerProgress = () => {
 		const interval = setInterval(() => {
 			const offset = new Date().getTimezoneOffset()
 			const currentMillis = new Date().getTime() + offset * 60000
-			const iniDate = new Date('04/04/2021 13:00:00')
+			const iniDate = new Date('04/04/2021 12:00:00')
 			const endDate = new Date('04/04/2021 14:00:00')
 			const iniDateMillis = iniDate.getTime()
 			const endDateMillis = endDate.getTime()
