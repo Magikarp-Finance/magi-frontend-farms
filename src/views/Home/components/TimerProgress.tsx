@@ -51,14 +51,14 @@ const TimerProgress = () => {
 		<ProgressWrapper>
 			<Progress primaryStep={Timers.ProgressPercent * 100} />
 			<TopTextWrapper>
-				<StyledPrimaryText fontSize='20px' bold color='white'>
+				<StyledPrimaryText fontSize='20px' bold color='primary'>
 					{Timers.ProgressPercent <= 1 ? Timers.diffText : ' Countdown finished!!!!  '}
 				</StyledPrimaryText>
 				<Text fontSize='20px' bold color='invertedContrast' />
 			</TopTextWrapper>
 			<BottomTextWrapper>
-				<StyledPrimaryText fontSize='15px' color='white'>
-					<StyledPrimaryText fontSize='15px' color='white'>
+				<StyledPrimaryText fontSize='15px' color='primary'>
+					<StyledPrimaryText fontSize='15px' color='Contrast'>
 						{Timers.ProgressPercent <= 1 ? 'Shrine is being built 📿' : 'New Shrine is here!!!'}
 					</StyledPrimaryText>
 				</StyledPrimaryText>
