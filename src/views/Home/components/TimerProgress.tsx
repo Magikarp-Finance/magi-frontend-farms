@@ -34,8 +34,8 @@ const TimerProgress = () => {
 		const interval = setInterval(() => {
 			const offset = new Date().getTimezoneOffset()
 			const currentMillis = new Date().getTime() + offset * 60000
-			const iniDate = new Date('03/31/2021 12:30:00')
-			const endDate = new Date('03/31/2021 15:00:00')
+			const iniDate = new Date('04/04/2021 13:00:00')
+			const endDate = new Date('04/04/2021 14:00:00')
 			const iniDateMillis = iniDate.getTime()
 			const endDateMillis = endDate.getTime()
 			const ProgressPer = 1 - (endDateMillis - currentMillis) / (endDateMillis - iniDateMillis)
@@ -51,16 +51,18 @@ const TimerProgress = () => {
 		<ProgressWrapper>
 			<Progress primaryStep={Timers.ProgressPercent * 100} />
 			<TopTextWrapper>
-				<StyledPrimaryText fontSize='20px' bold color='contrast'>
-					{Timers.diffText}
+				<StyledPrimaryText fontSize='20px' bold color='white'>
+					{Timers.ProgressPercent <= 1 ? Timers.diffText : ' Countdown finished!!!!  '}
 				</StyledPrimaryText>
 				<Text fontSize='20px' bold color='invertedContrast' />
 			</TopTextWrapper>
 			<BottomTextWrapper>
-				<StyledPrimaryText fontSize='15px' color='contrast'>
-					Shrine is being built 📿
+				<StyledPrimaryText fontSize='15px' color='white'>
+					<StyledPrimaryText fontSize='15px' color='white'>
+						{Timers.ProgressPercent <= 1 ? 'Shrine is being built 📿' : 'New Shrine is here!!!'}
+					</StyledPrimaryText>
 				</StyledPrimaryText>
-			</BottomTextWrapper>
+			</BottomTextWrapper>)
 		</ProgressWrapper>
 	)
 }
