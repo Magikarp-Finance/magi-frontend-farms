@@ -62,7 +62,7 @@ const TimerProgress = () => {
 						{Timers.ProgressPercent <= 1 ? 'Shrine is being built 📿' : 'New Shrine is here!!!'}
 					</StyledPrimaryText>
 				</StyledPrimaryText>
-			</BottomTextWrapper>)
+			</BottomTextWrapper>
 		</ProgressWrapper>
 	)
 }
