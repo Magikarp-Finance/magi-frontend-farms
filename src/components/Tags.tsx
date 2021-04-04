@@ -26,7 +26,7 @@ const CommunityTag = () => (
 
 const BinanceTag = () => (
 	<Tag variant='binance' outline startIcon={<BinanceIcon />}>
-		Binance
+		Shrine
 	</Tag>
 )
 

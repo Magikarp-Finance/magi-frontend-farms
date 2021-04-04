@@ -109,7 +109,8 @@ const pools: PoolConfig[] = [
 		tokenPerBlock: '.38796',
 		sortOrder: 999,
 		isFinished: false,
-		isHighlighted: true
+		isHighlighted: true,
+		tagDisabled: true
 	}
 ]
 

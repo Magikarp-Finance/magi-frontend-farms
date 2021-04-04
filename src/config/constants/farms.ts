@@ -183,6 +183,25 @@ const farms: FarmConfig[] = [
 		quoteTokenSymbol: QuoteToken.BUSD,
 		quoteTokenAdresses: contracts.busd
 	}
+	/*
+	{
+		pid: 113,
+		risk: 3,
+		lpSymbol: 'BAKE',
+		isTokenOnly: true,
+		lpAddresses: {
+			97: '',
+			56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5'
+		},
+		tokenSymbol: 'BAKE',
+		tokenAddresses: {
+			97: '',
+			56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5'
+		},
+		quoteTokenSymbol: QuoteToken.BUSD,
+		quoteTokenAdresses: contracts.busd
+	}
+	*/
 ]
 
 export default farms

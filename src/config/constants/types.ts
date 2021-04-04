@@ -26,7 +26,8 @@ export enum QuoteToken {
 	'SYRUP' = 'SYRUP',
 	'BUSD' = 'BUSD',
 	'TWT' = 'TWT',
-	'UST' = 'UST'
+	'UST' = 'UST',
+	'BAKE' = 'BAKE'
 }
 
 export enum PoolCategory {
@@ -80,6 +81,7 @@ export interface PoolConfig {
 	isFinished?: boolean
 	poolName: string
 	isHighlighted?: boolean
+	tagDisabled?: boolean
 }
 
 export type Nft = {
