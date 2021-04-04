@@ -87,7 +87,8 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
     userData,
     stakingLimit,
     isHighlighted,
-    poolName
+    poolName,
+    tagDisabled,
   } = pool
 
   // Pools using native BNB behave differently than pools using a token
@@ -267,6 +268,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
         tokenName={earningToken.symbol}
         tokenAddress={earningToken.address ? getAddress(earningToken.address) : ''}
         tokenDecimals={earningToken.decimals}
+        tagDisabled={tagDisabled}
       />
     </Card>
   )

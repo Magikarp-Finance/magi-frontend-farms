@@ -27,6 +27,7 @@ interface Props {
 	endBlock: number
 	isFinished: boolean
 	poolCategory: PoolCategory
+	tagDisabled: boolean
 }
 
 const StyledFooter =
@@ -81,7 +82,8 @@ const CardFooter: React.FC<Props> = ({
 	isFinished,
 	startBlock,
 	endBlock,
-	poolCategory
+	poolCategory,
+	tagDisabled
 }) => {
 	const { blockNumber: currentBlock } = useBlock()
 	const [ isOpen, setIsOpen ] = useState(false)
@@ -97,9 +99,7 @@ const CardFooter: React.FC<Props> = ({
 	return (
 		<StyledFooter isFinished={isFinished}>
 			<Row>
-				<FlexFull>
-					<Tag />
-				</FlexFull>
+				<FlexFull>{tagDisabled ? ' ' : <Tag />}</FlexFull>
 				<StyledDetailsButton onClick={handleClick}>
 					{isOpen ? TranslateString(1066, 'Hide') : TranslateString(658, 'Details')} <Icon />
 				</StyledDetailsButton>
