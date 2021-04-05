@@ -52,15 +52,13 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({ onConfirm, onDismiss, max
 					{TranslateString(462, 'Cancel')}
 				</Button>
 				<Button
-					disabled
-					/*
+					disabled={pendingTx}
 					onClick={async () => {
 						setPendingTx(true)
 						await onConfirm(val)
 						setPendingTx(false)
 						onDismiss()
 					}}
-					*/
 				>
 					{pendingTx ? TranslateString(488, 'Pending Confirmation') : TranslateString(464, 'Confirm')}
 				</Button>

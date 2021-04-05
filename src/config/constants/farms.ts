@@ -185,21 +185,21 @@ const farms: FarmConfig[] = [
 	}
 	/*
 	{
-		pid: 113,
+		pid: 11,
 		risk: 3,
 		lpSymbol: 'BAKE',
 		isTokenOnly: true,
 		lpAddresses: {
 			97: '',
-			56: '0x3Da30727ed0626b78C212e81B37B97A8eF8A25bB'
+			56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5'
 		},
 		tokenSymbol: 'BAKE',
 		tokenAddresses: {
 			97: '',
 			56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5'
 		},
-		quoteTokenSymbol: QuoteToken.BNB,
-		quoteTokenAdresses: contracts.wbnb
+		quoteTokenSymbol: QuoteToken.CAKE,
+		quoteTokenAdresses: contracts.busd
 	}
 	*/
 ]

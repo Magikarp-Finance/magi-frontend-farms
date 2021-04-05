@@ -169,7 +169,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
       {isFinished && sousId !== 0 && <PoolFinishedSash />}
       <div style={{ padding: '24px' }}>
         <CardTitle isFinished={isFinished && sousId !== 0}>
-          {/* {isOldSyrup && '[OLD]'} {earningToken.symbol} {TranslateString(348, 'Pool')} */}
+          { /* {isOldSyrup && '[OLD]'} {earningToken.symbol} {TranslateString(348, 'Pool')} */ }
           {poolName }
         </CardTitle>
         <div style={{ marginBottom: '8px', display: 'flex', alignItems: 'center' }}>
@@ -178,7 +178,8 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
           </div>
           {account && harvest && !isOldSyrup && (
             <HarvestButton
-              disabled={!earnings.toNumber() || pendingTx}
+               disabled={!earnings.toNumber() || pendingTx} 
+              
               text={pendingTx ? 'Collecting' : 'Harvest'}
               onClick={async () => {
                 setPendingTx(true)
@@ -217,10 +218,10 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
               <>
                 <Button
 
-                  /* disabled={stakedBalance.eq(new BigNumber(0)) || pendingTx} */
-                  disabled
+                   disabled={stakedBalance.eq(new BigNumber(0)) || pendingTx} 
+                  
                   style={{ width: '80%' }}
-                  /*
+                  
                   onClick={
                     isOldSyrup
                       ? async () => {
@@ -229,8 +230,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
                           setPendingTx(false)
                         }
                       : onPresentWithdraw
-                  } */
-                >
+                  }                 >
                   {`Unstake ${stakingToken.symbol}`}
                 </Button>
                 <StyledActionSpacer />
