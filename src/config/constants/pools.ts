@@ -104,13 +104,13 @@ const pools: PoolConfig[] = [
 			97: '',
 			56: '0xd0bb34Da9A74727524867bE055499E05F872FABB'
 		},
-		poolCategory: PoolCategory.COMMUNITY,
+		poolCategory: PoolCategory.CORE,
 		harvest: true,
 		tokenPerBlock: '.38796',
 		sortOrder: 999,
-		isFinished: false,
+		isFinished: true,
 		isHighlighted: true,
-		tagDisabled: true
+		tagDisabled: false
 	}
 ]
 
