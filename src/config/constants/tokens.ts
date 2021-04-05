@@ -71,7 +71,7 @@ const tokens = {
 		symbol: 'BAKE',
 		address: {
 			56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
-			97: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5'
+			97: ''
 		},
 		decimals: 18,
 		projectLink: 'https://www.bakeryswap.org/'

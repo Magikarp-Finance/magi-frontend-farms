@@ -216,8 +216,11 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
             ) : (
               <>
                 <Button
-                  disabled={stakedBalance.eq(new BigNumber(0)) || pendingTx}
+
+                  /* disabled={stakedBalance.eq(new BigNumber(0)) || pendingTx} */
+                  disabled
                   style={{ width: '80%' }}
+                  /*
                   onClick={
                     isOldSyrup
                       ? async () => {
@@ -226,7 +229,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
                           setPendingTx(false)
                         }
                       : onPresentWithdraw
-                  }
+                  } */
                 >
                   {`Unstake ${stakingToken.symbol}`}
                 </Button>

@@ -52,7 +52,42 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({ onConfirm, onDismiss, max
 					{TranslateString(462, 'Cancel')}
 				</Button>
 				<Button
+					disabled
+					/*
+					onClick={async () => {
+						setPendingTx(true)
+						await onConfirm(val)
+						setPendingTx(false)
+						onDismiss()
+					}}
+					*/
+				>
+					{pendingTx ? TranslateString(488, 'Pending Confirmation') : TranslateString(464, 'Confirm')}
+				</Button>
+			</ModalActions>
+		</Modal>
+	)
+}
+
+export default WithdrawModal
+
+/*
+
+<Modal title={`Withdraw ${tokenName}`} onDismiss={onDismiss}>
+			<TokenInput
+				onSelectMax={handleSelectMax}
+				onChange={handleChange}
+				value={val}
+				max={fullBalance}
+				symbol={tokenName}
+			/>
+			<ModalActions>
+				<Button variant='secondary' onClick={onDismiss}>
+					{TranslateString(462, 'Cancel')}
+				</Button>
+				<Button
 					disabled={pendingTx}
+					
 					onClick={async () => {
 						setPendingTx(true)
 						await onConfirm(val)
@@ -64,7 +99,4 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({ onConfirm, onDismiss, max
 				</Button>
 			</ModalActions>
 		</Modal>
-	)
-}
-
-export default WithdrawModal
+		*/
