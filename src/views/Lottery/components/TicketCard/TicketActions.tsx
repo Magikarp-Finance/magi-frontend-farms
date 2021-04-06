@@ -57,7 +57,7 @@ const TicketCard: React.FC = () => {
           <Button fullWidth disabled>
             {TranslateString(432, 'View your tickets')}
           </Button>
-          <Button fullWidth disabled={requestedApproval} onClick={handleApprove}>
+          <Button fullWidth disabled onClick={handleApprove}>
             {TranslateString(999, 'Approve GYA')}
           </Button>
         </>
@@ -74,7 +74,7 @@ const TicketCard: React.FC = () => {
         >
           {TranslateString(432, 'View your tickets')}
         </Button>
-        <Button id="lottery-buy-start" fullWidth onClick={onPresentBuy}>
+        <Button id="lottery-buy-start" fullWidth onClick={onPresentBuy} disabled>
           {TranslateString(430, 'Buy ticket')}
         </Button>
       </>
@@ -93,3 +93,8 @@ const TicketCard: React.FC = () => {
 }
 
 export default TicketCard
+/*
+<Button fullWidth disabled={requestedApproval} onClick={handleApprove}>
+            {TranslateString(999, 'Approve GYA')}
+          </Button>
+*/

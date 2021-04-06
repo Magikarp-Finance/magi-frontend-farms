@@ -74,7 +74,7 @@ const TicketCard: React.FC = () => {
         >
           {TranslateString(432, 'View your tickets')}
         </Button>
-        <Button id="lottery-buy-start" fullWidth onClick={onPresentBuy}>
+        <Button id="lottery-buy-start" fullWidth onClick={onPresentBuy} disabled >
           {TranslateString(430, 'Buy ticket')}
         </Button>
       </>
