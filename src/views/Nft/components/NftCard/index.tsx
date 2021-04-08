@@ -132,7 +132,7 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
 				<Header>
 					<Heading>{name}</Heading>
 					{isInitialized &&
-					walletCanClaim && (
+					!walletCanClaim && (
 						<Tag outline variant='success'>
 							{TranslateString(526, 'Available')}
 						</Tag>
@@ -145,14 +145,14 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
 					)}
 				</Header>
 				{isInitialized &&
-				walletOwnsNft && (
+				!walletOwnsNft && (
 					<Button fullWidth variant='secondary' mt='24px' onClick={onPresentTransferModal}>
 						{TranslateString(999, 'Transfer')}
 					</Button>
 				)}
 				{isInitialized &&
-				walletCanClaim &&
-				isSupplyAvailable && (
+				!walletCanClaim &&
+				!isSupplyAvailable && (
 					<Button fullWidth onClick={onPresentClaimModal} mt='24px'>
 						{TranslateString(999, 'Claim this NFT')}
 					</Button>
@@ -174,6 +174,18 @@ const NftCard: React.FC<NftCardProps> = ({ nft }) => {
 						<Text as='p' color='textSubtle' mb='16px' style={{ textAlign: 'center' }}>
 							{description}
 						</Text>
+						<InfoRow>
+							<Text>{TranslateString(999, 'Value if traded in')}:</Text>
+							<Value>10 CAKE</Value>
+						</InfoRow>
+						<InfoRow>
+							<Text>{TranslateString(999, 'Number minted')}:</Text>
+							<Value>{state.bunnyCount + state.bunnyBurnCount}</Value>
+						</InfoRow>
+						<InfoRow>
+							<Text>{TranslateString(999, 'Number burned')}:</Text>
+							<Value>{state.bunnyBurnCount}</Value>
+						</InfoRow>
 					</InfoBlock>
 				)}
 			</CardFooter>

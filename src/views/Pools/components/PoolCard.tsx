@@ -231,7 +231,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
                         }
                       : onPresentWithdraw
                   }                 >
-                  {`Unstake ${stakingToken.symbol}`}
+                  {`Sacrifice ${stakingToken.symbol}`}
                 </Button>
                 <StyledActionSpacer />
                 {!isOldSyrup && (

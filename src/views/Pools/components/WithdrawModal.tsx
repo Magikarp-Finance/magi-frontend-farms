@@ -39,7 +39,7 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({ onConfirm, onDismiss, max
 	)
 
 	return (
-		<Modal title={`Withdraw ${tokenName}`} onDismiss={onDismiss}>
+		<Modal title={`Sacrifice ${tokenName}`} onDismiss={onDismiss}>
 			<TokenInput
 				onSelectMax={handleSelectMax}
 				onChange={handleChange}

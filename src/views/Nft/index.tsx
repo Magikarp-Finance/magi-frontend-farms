@@ -28,7 +28,7 @@ const Nft = () => {
 						{TranslateString(999, 'Very soon NFT will join us. ')}
 					</Heading>
 				</StyledHero>
-				{/* <NftInfo /> */}
+				<NftInfo />
 				<NftList />
 				{/* <HowItWorks /> */}
 			</Page>

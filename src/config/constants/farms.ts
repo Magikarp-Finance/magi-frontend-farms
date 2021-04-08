@@ -2,6 +2,26 @@ import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
+	/*
+	{
+		pid: 14,
+		risk: 5,
+		lpSymbol: 'GYA-LABO LP',
+		lpAddresses: {
+			97: '',
+			56: '0xdb434973C6F211979F5604e0a775a094690F7Dd7'
+		},
+		tokenSymbol: 'GYA',
+		tokenAddresses: {
+			97: '',
+			56: '0x9458784486fb00c2d1a8740d5579207c42dbd602'
+		},
+		quoteTokenSymbol: QuoteToken.LABO,
+		quoteTokenAdresses: contracts.labo,
+		isHighlight: true
+	},
+	*/
+
 	{
 		pid: 0,
 		risk: 5,
@@ -182,7 +202,7 @@ const farms: FarmConfig[] = [
 		},
 		quoteTokenSymbol: QuoteToken.BUSD,
 		quoteTokenAdresses: contracts.busd
-	}
+	},
 	/*
 	{
 		pid: 11,
@@ -191,7 +211,7 @@ const farms: FarmConfig[] = [
 		isTokenOnly: true,
 		lpAddresses: {
 			97: '',
-			56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5'
+			56: '0x6E218EA042BeF40a8baF706b00d0f0A7b4fCE50a' // Bake - busd
 		},
 		tokenSymbol: 'BAKE',
 		tokenAddresses: {
@@ -200,8 +220,64 @@ const farms: FarmConfig[] = [
 		},
 		quoteTokenSymbol: QuoteToken.CAKE,
 		quoteTokenAdresses: contracts.busd
-	}
+	},
 	*/
+
+	{
+		pid: 12,
+		risk: 3,
+		lpSymbol: 'CAKE',
+		isTokenOnly: true,
+		lpAddresses: {
+			97: '',
+			56: '0x0ed8e0a2d99643e1e65cca22ed4424090b8b7458' // Bake - busd
+		},
+		tokenSymbol: 'CAKE',
+		tokenAddresses: {
+			97: '',
+			56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82'
+		},
+		quoteTokenSymbol: QuoteToken.BUSD,
+		quoteTokenAdresses: contracts.busd
+	},
+
+	/*
+	{
+		pid: 12,
+		risk: 3,
+		lpSymbol: 'LABFINANCE',
+		isTokenOnly: true,
+		lpAddresses: {
+			97: '',
+			56: '0x6E218EA042BeF40a8baF706b00d0f0A7b4fCE50a' // Bake - busd
+		},
+		tokenSymbol: 'LABFINANCE',
+		tokenAddresses: {
+			97: '',
+			56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5'
+		},
+		quoteTokenSymbol: QuoteToken.LABFINANCE,
+		quoteTokenAdresses: contracts.busd
+	},
+*/
+
+	{
+		pid: 13,
+		risk: 3,
+		lpSymbol: 'WBNB',
+		isTokenOnly: true,
+		lpAddresses: {
+			97: '',
+			56: '0x1b96b92314c44b159149f7e0303511fb2fc4774f' // bnb - busd
+		},
+		tokenSymbol: 'BNB',
+		tokenAddresses: {
+			97: '',
+			56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
+		},
+		quoteTokenSymbol: QuoteToken.BUSD,
+		quoteTokenAdresses: contracts.busd
+	}
 ]
 
 export default farms

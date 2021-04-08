@@ -109,9 +109,28 @@ const pools: PoolConfig[] = [
 		tokenPerBlock: '.38796',
 		sortOrder: 999,
 		isFinished: true,
-		isHighlighted: true,
+		isHighlighted: false,
 		tagDisabled: false
 	}
+	/*
+	{
+		sousId: 4,
+		poolName: 'BNB Shrine',
+		stakingToken: tokens.gya,
+		earningToken: tokens.bnb,
+		contractAddress: {
+			97: '',
+			56: '0xdb434973C6F211979F5604e0a775a094690F7Dd7'
+		},
+		poolCategory: PoolCategory.CORE,
+		harvest: false,
+		tokenPerBlock: '.0001',
+		sortOrder: 999,
+		isFinished: false,
+		isHighlighted: true,
+		tagDisabled: true
+	}
+	*/
 ]
 
 export default pools

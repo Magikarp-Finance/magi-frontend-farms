@@ -36,5 +36,8 @@ export default {
 	bake: {
 		56: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5',
 		97: '0xE02dF9e3e622DeBdD69fb838bB799E3F168902c5'
+	},
+	labo: {
+		56: '0x171401a3d18B21BFa3f9bF4F9637F3691158365A'
 	}
 }
