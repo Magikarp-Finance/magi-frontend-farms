@@ -8,7 +8,7 @@ const farms: FarmConfig[] = [
 		lpSymbol: 'LABO-GYA LP',
 		lpAddresses: {
 			97: '',
-			56: '0x7248953e6CF8927b8a3942ccbEb61e00559Dd3A5'
+			56: '0x75e2661694bbf06359d5f81bd7b57e980a45644d'
 		},
 		tokenSymbol: 'GYA',
 		tokenAddresses: {
