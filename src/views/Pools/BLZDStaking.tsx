@@ -15,6 +15,9 @@ import PoolTabButtons from './components/PoolTabButtons'
 import Divider from './components/Divider'
 import TimerProgress from '../Home/components/TimerProgress'
 
+
+
+
 const Farm: React.FC = () => {
   const { path } = useRouteMatch()
   const TranslateString = useI18n()
@@ -26,6 +29,7 @@ const Farm: React.FC = () => {
     () => partition(pools, (pool) => pool.isFinished || blockNumber > pool.endBlock),
     [blockNumber, pools],
   )
+  const Arrowa='->'
 
   return (
     <Page>
@@ -36,8 +40,9 @@ const Farm: React.FC = () => {
           </Heading>
           <ul>
 
-            <li>Stake GYA to earn a new Token</li>
-            <li>Unstake burns 50% of the stacked GYA tokens.</li>
+            <li>Stake GYA to earn BNB</li>
+            <li>Sacrifice GYA 🔥 burns a dynamic % of the stacked GYA tokens</li>
+            <li> (check Stages below)</li>
             <li>Rewards are calculated per block.</li>
           </ul>
         </div>
@@ -63,9 +68,25 @@ const Farm: React.FC = () => {
           ))}
         </Route>
       </FlexLayout>
+      <br/>
+      <br/>
+      <br/> 
+       <Heading   >
+        STAGES
+     </Heading>
+     
+      <br/>
+      <ul style={{color:'#d37a40',margin:'auto'}}>
+          <li style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#78b159',borderRadius:'4px'}} /> Stage 1: From 0 to 5000 GYA {Arrowa} 🔥 Burn Fee will be set to <b>50%</b></li>
+            <li  style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#fdcb58',borderRadius:'4px'}} /> Stage 2: From 5000 to 10.000 GYA {Arrowa} 🔥 Burn Fee will be reduced to <b>40%</b></li>
+            <li  style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#f4900c',borderRadius:'4px'}} /> Stage 3: From 10.000 to 20.000 GYA {Arrowa} 🔥 Burn Fee reduced to <b>35%</b></li>
+            <li  style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#c1694f',borderRadius:'4px'}} /> Stage 4: From 20.000 to 30.000 GYA {Arrowa} 🔥 Burn Fee reduced to <b>30%</b></li>
+            <li  style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#dd2e44',borderRadius:'4px'}} /> Final Stage: 40.000+++ {Arrowa} 🔥 Burn Fee reduced to <b> 20%</b></li>
+            </ul>
     </Page>
   )
 }
+
 
 const Hero = styled.div`
   align-items: center;

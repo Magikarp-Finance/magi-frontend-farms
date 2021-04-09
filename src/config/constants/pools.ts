@@ -111,8 +111,7 @@ const pools: PoolConfig[] = [
 		isFinished: true,
 		isHighlighted: false,
 		tagDisabled: false
-	}
-	/*
+	},
 	{
 		sousId: 4,
 		poolName: 'BNB Shrine',
@@ -130,7 +129,6 @@ const pools: PoolConfig[] = [
 		isHighlighted: true,
 		tagDisabled: true
 	}
-	*/
 ]
 
 export default pools

@@ -34,8 +34,8 @@ const TimerProgress = () => {
 		const interval = setInterval(() => {
 			const offset = new Date().getTimezoneOffset()
 			const currentMillis = new Date().getTime() + offset * 60000
-			const iniDate = new Date('04/09/2021 14:00:00')
-			const endDate = new Date('04/11/2021 14:00:00')
+			const iniDate = new Date('04/09/2021 10:00:00')
+			const endDate = new Date('04/09/2021 12:00:00')
 			const iniDateMillis = iniDate.getTime()
 			const endDateMillis = endDate.getTime()
 			const ProgressPer = 1 - (endDateMillis - currentMillis) / (endDateMillis - iniDateMillis)
@@ -58,7 +58,7 @@ const TimerProgress = () => {
 			<BottomTextWrapper>
 				<StyledPrimaryText fontSize='15px' color='primary'>
 					<StyledPrimaryText fontSize='15px' color='Contrast'>
-						{Timers.ProgressPercent <= 1 ? 'until Shrine will be live 📿' : 'New Shrine is here !'}
+						{Timers.ProgressPercent <= 1 ? 'until Shrine is live 📿' : 'New Shrine is here !'}
 					</StyledPrimaryText>
 				</StyledPrimaryText>
 			</BottomTextWrapper>
