@@ -80,7 +80,7 @@ const Farm: React.FC = () => {
           <li style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#78b159',borderRadius:'4px'}} /> Stage 1: From 0 to 5000 GYA {Arrowa} 🔥 Burn Fee will be set to <b>50%</b></li>
             <li  style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#fdcb58',borderRadius:'4px'}} /> Stage 2: From 5000 to 10.000 GYA {Arrowa} 🔥 Burn Fee will be reduced to <b>40%</b></li>
             <li  style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#f4900c',borderRadius:'4px'}} /> Stage 3: From 10.000 to 20.000 GYA {Arrowa} 🔥 Burn Fee reduced to <b>35%</b></li>
-            <li  style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#c1694f',borderRadius:'4px'}} /> Stage 4: From 20.000 to 30.000 GYA {Arrowa} 🔥 Burn Fee reduced to <b>30%</b></li>
+            <li  style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#c1694f',borderRadius:'4px'}} /> Stage 4: From 20.000 to 40.000 GYA {Arrowa} 🔥 Burn Fee reduced to <b>30%</b></li>
             <li  style={{marginTop:"12px"}}><span style={{display:'inline-block',width:'16px',height:'16px',background:'#dd2e44',borderRadius:'4px'}} /> Final Stage: 40.000+++ {Arrowa} 🔥 Burn Fee reduced to <b> 20%</b></li>
             </ul>
     </Page>
