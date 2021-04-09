@@ -31,7 +31,7 @@ const Farm: React.FC = () => {
     <Page>
       <Hero>
         <div>
-          <Heading as="h1" size="xl" mb="16px">
+          <Heading   >
             {TranslateString(999, '⛩️ GYA SHRINE')}
           </Heading>
           <ul>
@@ -42,8 +42,8 @@ const Farm: React.FC = () => {
           </ul>
         </div>
         <div style={{ textAlign: 'right' }}>
-          
-           <img src="/images/blzdstakepage.png" alt="GYA Pool icon" /> 
+        <TimerProgress />
+            {/* <img src="/images/blzdstakepage.png" alt="GYA Pool icon" /> */}
         </div>
       </Hero>
       <PoolTabButtons />

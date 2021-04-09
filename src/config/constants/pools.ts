@@ -120,11 +120,11 @@ const pools: PoolConfig[] = [
 		earningToken: tokens.bnb,
 		contractAddress: {
 			97: '',
-			56: '0xdb434973C6F211979F5604e0a775a094690F7Dd7'
+			56: '0xF11d485Cb2c65ea7825873cFCeC48637EEEf1A79'
 		},
 		poolCategory: PoolCategory.CORE,
 		harvest: false,
-		tokenPerBlock: '.0001',
+		tokenPerBlock: '0.000434',
 		sortOrder: 999,
 		isFinished: false,
 		isHighlighted: true,
