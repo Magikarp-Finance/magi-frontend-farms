@@ -2,14 +2,13 @@ import contracts from './contracts'
 import { FarmConfig, QuoteToken } from './types'
 
 const farms: FarmConfig[] = [
-	/*
 	{
 		pid: 14,
 		risk: 5,
-		lpSymbol: 'GYA-LABO LP',
+		lpSymbol: 'LABO-GYA LP',
 		lpAddresses: {
 			97: '',
-			56: '0xdb434973C6F211979F5604e0a775a094690F7Dd7'
+			56: '0x7248953e6CF8927b8a3942ccbEb61e00559Dd3A5'
 		},
 		tokenSymbol: 'GYA',
 		tokenAddresses: {
@@ -20,7 +19,6 @@ const farms: FarmConfig[] = [
 		quoteTokenAdresses: contracts.labo,
 		isHighlight: true
 	},
-	*/
 
 	{
 		pid: 0,
@@ -222,6 +220,7 @@ const farms: FarmConfig[] = [
 		quoteTokenAdresses: contracts.busd
 	},
 	*/
+
 	{
 		pid: 12,
 		risk: 3,
