@@ -44,6 +44,7 @@ const Farm: React.FC = () => {
             <li>Sacrifice GYA 🔥 burns a dynamic % of the stacked GYA tokens</li>
             <li> (check Stages below)</li>
             <li>Rewards are calculated per block.</li>
+            <li><strong>Harvest button will be enable once the timer reaches 0</strong></li>
           </ul>
         </div>
         <div style={{ textAlign: 'right' }}>
