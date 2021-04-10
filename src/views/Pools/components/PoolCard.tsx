@@ -234,7 +234,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
                   {`Sacrifice ${stakingToken.symbol}`}
                 </Button>
                 <StyledActionSpacer />
-                {!isOldSyrup && (
+                {isOldSyrup && (
                   <IconButton style={{ width: '20%' }} disabled={isFinished && sousId !== 0} onClick={onPresentDeposit}>
                     <AddIcon color="white" />
                   </IconButton>
