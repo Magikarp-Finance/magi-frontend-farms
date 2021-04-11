@@ -19,6 +19,25 @@ const farms: FarmConfig[] = [
 		quoteTokenAdresses: contracts.labo,
 		isHighlight: true
 	},
+	/*
+	{
+		pid: 15,
+		risk: 3,
+		lpSymbol: 'DSL-GYA LP',
+		isTokenOnly: false,
+		lpAddresses: {
+			97: '',
+			56: '0x932Cc6b80B1592e99b78c45c9f5ca2dD13bE20a7' // bnb - busd
+		},
+		tokenSymbol: 'GYA',
+		tokenAddresses: {
+			97: '',
+			56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
+		},
+		quoteTokenSymbol: QuoteToken.DSL,
+		quoteTokenAdresses: contracts.dsl
+	},
+	*/
 
 	{
 		pid: 0,

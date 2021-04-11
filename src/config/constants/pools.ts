@@ -125,9 +125,9 @@ const pools: PoolConfig[] = [
 		harvest: false,
 		tokenPerBlock: '0.000434',
 		sortOrder: 999,
-		isFinished: false,
+		isFinished: true,
 		isHighlighted: true,
-		tagDisabled: true
+		tagDisabled: false
 	}
 ]
 

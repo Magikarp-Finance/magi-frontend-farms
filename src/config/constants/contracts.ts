@@ -39,5 +39,8 @@ export default {
 	},
 	labo: {
 		56: '0x171401a3d18B21BFa3f9bF4F9637F3691158365A'
+	},
+	dsl: {
+		56: '0x72feac4c0887c12db21ceb161533fd8467469e6b'
 	}
 }
