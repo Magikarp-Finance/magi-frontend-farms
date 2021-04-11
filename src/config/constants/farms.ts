@@ -19,7 +19,7 @@ const farms: FarmConfig[] = [
 		quoteTokenAdresses: contracts.labo,
 		isHighlight: true
 	},
-	/*
+
 	{
 		pid: 15,
 		risk: 3,
@@ -37,8 +37,6 @@ const farms: FarmConfig[] = [
 		quoteTokenSymbol: QuoteToken.DSL,
 		quoteTokenAdresses: contracts.dsl
 	},
-	*/
-
 	{
 		pid: 0,
 		risk: 5,
