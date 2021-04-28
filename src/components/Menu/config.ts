@@ -13,16 +13,16 @@ const config: MenuEntry[] = [
 			{
 				label: 'Exchange Magikarp',
 				href:
-					'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c'
+					'https://v1exchange.pancakeswap.finance/#/swap?outputCurrency=0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c'
 			},
 			{
 				label: 'Exchange Gyarados',
 				href:
-					'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9458784486fb00c2d1a8740d5579207c42dbd602  '
+					'https://v1exchange.pancakeswap.finance/#/swap?outputCurrency=0x9458784486fb00c2d1a8740d5579207c42dbd602  '
 			},
 			{
 				label: 'Liquidity',
-				href: 'https://exchange.pancakeswap.finance/#/pool'
+				href: 'https://v1exchange.pancakeswap.finance/#/pool'
 			}
 		]
 	},
@@ -81,7 +81,7 @@ const config: MenuEntry[] = [
 			{
 				label: 'Buy Magi',
 				href:
-					'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c'
+					'https://v1exchange.pancakeswap.finance/#/swap?outputCurrency=0xc603b1fba6A5b502Be4f1Ab27591bF4e75A3460c'
 			},
 			{
 				label: 'Chart Magi',
@@ -100,7 +100,7 @@ const config: MenuEntry[] = [
 			{
 				label: 'Buy Gya',
 				href:
-					'https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9458784486fb00C2D1a8740d5579207c42DBd602'
+					'https://v1exchange.pancakeswap.finance/#/swap?outputCurrency=0x9458784486fb00C2D1a8740d5579207c42DBd602'
 			},
 			{
 				label: 'Chart Gya',
